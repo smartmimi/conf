@@ -1,6 +1,7 @@
 # conf 用于去广告规则得更新
 ## 出处：NGA清新计划 
 ### 如有文字备注，为规则作者说明（非本发布者）。
+### 依据lhie1规则进行改动，原版地址为https://github.com/lhie1/Rules
 ------------------------------------------------------------------------------------------------------------------------------------------
 ##### shadowrocket 20180920日更新
 #### https://raw.githubusercontent.com/smartmimi/conf/master/lhie1-Shadow-mandarin.conf
