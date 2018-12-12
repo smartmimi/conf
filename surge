@@ -17,7 +17,6 @@ DOMAIN-SUFFIX,sdk.e.qq.com,REJECT
 DOMAIN-KEYWORD,rayjump,REJECT
 DOMAIN-SUFFIX,smdc.huojianpq.net,REJECT
 DOMAIN-SUFFIX,www.jiaodafu.net,REJECT
-DOMAIN-SUFFIX,www.dcard.tw,PROXY
 DOMAIN-SUFFIX,goto.hupu.com,REJECT
 DOMAIN-SUFFIX,minisite-d.hupucdn.com,REJECT
 DOMAIN-SUFFIX,mns.hupu.com,REJECT
