@@ -4,7 +4,7 @@ es (36 sloc) 1.28 KB
 
 ## 群组
 
-[Fndroid脚本讨论](t.me/Rules_lhie1)
+[Fndroid脚本讨论](https://t.me/Rules_lhie1)
 
 #### Thor+Shu+Aunbis
 
