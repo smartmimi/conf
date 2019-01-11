@@ -7,10 +7,15 @@ es (36 sloc) 1.28 KB
 [Fndroid脚本讨论](https://t.me/Rules_lhie1)
 
 [Thor+Shu+Aunbis](https://t.me/thorshu)
+
 [quantumult](https://t.me/quantumultapp)
+
 [Pin apps(jsbox)](https://t.me/PinTG)
-[印象笔记 Evernote 群](https://t.me/YinxiangBiji）
+
+[印象笔记 Evernote 群](https://t.me/YinxiangBiji)
+
 [Surge 交流](https://t.me/loveapps)
+
 [marginNote 用户群](https://t.me/joinchat/Ag98F0zLDrJZOSBWXAEiow)
 
 ## 频道
