@@ -16,7 +16,7 @@ es (36 sloc) 1.28 KB
 
 [Surge 交流](https://t.me/loveapps)
 
-[marginNote 用户群](https://t.me/joinchat/Ag98F0zLDrJZOSBWXAEiow)
+[MarginNote 用户群](https://t.me/joinchat/Ag98F0ZLDrJZOSBWXAEiow)
 
 ## 频道
 
