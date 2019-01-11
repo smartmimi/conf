@@ -6,65 +6,30 @@ es (36 sloc) 1.28 KB
 
 [Fndroid脚本讨论](https://t.me/Rules_lhie1)
 
-#### Thor+Shu+Aunbis
-
-t.me/thorshu
-
-#### quantumult
-
-t.me/quantumultapp
-
-#### Pin apps(jsbox)
-
-t.me/PinTG
-
-#### 印象笔记 Evernote 群
-
-t.me/YinxiangBiji
-
-#### Surge 交流
-
-t.me/loveapps
-
-#### marginNote 用户群
-
-t.me/joinchat/Ag98F0zLDrJZOSBWXAEiow
-
-
+[Thor+Shu+Aunbis](https://t.me/thorshu)
+[quantumult](https://t.me/quantumultapp)
+[Pin apps(jsbox)](https://t.me/PinTG)
+[印象笔记 Evernote 群](https://t.me/YinxiangBiji）
+[Surge 交流](https://t.me/loveapps)
+[marginNote 用户群](https://t.me/joinchat/Ag98F0zLDrJZOSBWXAEiow)
 
 ## 频道
 
-#### 印象笔记|科技 NEWS
+[印象笔记|科技 NEWS](https://t.me/YinxiangBiji_News)
 
-t.me/YinxiangBiji_News
+[Surge News](https://t.me/surgenews)
 
-#### Surge News
+[Licenses Channel(合租频道)](https://t.me/Licensess)
 
-t.me/surgenews
+[Thor 日常消息](https://t.me/thornotice)
 
-#### Licenses Channel(合租频道）
+[Fndroid的日常](https://t.me/Fndroids)
 
-t.me/Licensess
+[Flow/Script News](https://t.me/Flow_Script)
 
-#### Thor 日常消息
+[Shadowrocket News](https://t.me/ShadowrocketNews)
 
-t.me/thornotice
-
-#### Fndroid的日常
-
-t.me/Fndroids
-
-#### Flow/Script News
-
-t.me/Flow_Script
-
-#### Shadowrocket News
-
-t.me/ShadowrocketNews
-
-#### Quantumult News
-
-t.me/quantumultappnews
+[Quantumult News](https://t.me/quantumultappnews)
 
 
 
