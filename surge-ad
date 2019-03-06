@@ -8942,7 +8942,7 @@ FINAL,DIRECT
 ^https?:\/\/wmedia-track\.uc\.cn - reject
 ^https?:\/\/www\.ft\.com\/__origami\/service\/image\/v2\/images\/raw\/https%3A%2F%2Fcreatives\.ftimg\.net%2Fads* - reject
 ^https?:\/\/www\.lianbijr\.com\/adPage\/ - reject
-(?<=\?video_id=\w{32})[^*]+  302
+(?<=&?watermark=)1(?=&) 0 302
 [MITM]
 skip-server-cert-verify = true
 tcp-connection = true
