@@ -1,74 +1,122 @@
-#!name=lxk0301 iOS Tasks Module
-#!desc=iOS Tasks 模块配置
-
-# Task模块配置 By lxk0301
-# GitHub主页(https://github.com/lxk0301/jd_scripts)
-# TG讨论组 (https://t.me/JD_fruit_pet)
-# TG通知频道 (https://t.me/jdfruit)
-# Surge的Task脚本模块地址: 
+#!name=京东领豆任务合集 (Gitee)
+#!desc=该模块收集并整理了当前所有关于 “京东” 相关的脚本，脚本地址使用 Gitee 地址，该模块仅仅作为紧急情况下使用，不会快速更新。上次更新时间：2021-01-14 22:10
+#!tag = type=cron, cronexp="cronexample, wake-system=1, timeout=600, script-path=javescript
+#!GitHub:https://github.com/chiupam/Proxy/blob/master/Surge/jingdong.sgmodule
+#!Raw:https://raw.githubusercontent.com/chiupam/Proxy/master/Surge/jingdong.sgmodule
 
 [Script]
-#东东农场
-cron "40 8-18/5 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_fruit.js,timeout=530, wake-system=1, tag=东东农场
-#东东萌宠
-cron "20 8-18/5 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pet.js,timeout=530, wake-system=1, tag=东东萌宠
-#京东种豆得豆
-cron "50 7-21/2 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_plantBean.js,timeout=630, wake-system=1, tag=京东种豆得豆
-#宠汪汪
-cron "15 1,7,9,12,18,21 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy.js,timeout=330, wake-system=1, tag=宠汪汪
-#宠汪汪喂食(仅喂食)
-cron "12 */1 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js,timeout=30, wake-system=1, tag=宠汪汪喂食
-#宠汪汪偷好友积分与狗粮
-cron "0 0,6 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_steal.js,timeout=1420, wake-system=1, tag=宠汪汪偷好友积分与狗粮
-#宠汪汪积分兑换奖品
-cron "0 0,8,12,16 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_reward.js,timeout=130, wake-system=1, tag=宠汪汪积分兑换奖品
-#京东天天加速
-cron "8 */3 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_speed.js,timeout=130, wake-system=1, tag=京东天天加速
-#京东摇钱树
-cron "15 */5 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_moneyTree.js,timeout=130, wake-system=1, tag=京东摇钱树
-#摇京豆
-cron "5 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_club_lottery.js, timeout=1150, wake-system=1, tag=摇京豆
-#京小超
-cron "11 1-23/5 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_superMarket.js,timeout=530, wake-system=1, tag=京小超
-京小超兑换奖品
-cron "0,30 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_blueCoin.js,timeout=130, wake-system=1, tag=京小超兑换奖品
-#取关京东店铺商品
-cron "55 23 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js,timeout=250, wake-system=1, tag=取关京东店铺商品
-#进店领豆
-cron "10 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_shop.js,timeout=130, wake-system=1, tag=进店领豆
-#宠汪汪邀请助力与赛跑助力
-cron "15 10 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_run.js, timeout=230, wake-system=1, tag=宠汪汪邀请助力与赛跑助力
-#京东全民开红包
-cron "1 1 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_redPacket.js, wake-system=1, tag=京东全民开红包
-#京豆变动通知
-cron "2 9 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_change.js, timeout=650, wake-system=1, tag=京豆变动通知
-#点点券
-cron "30 0,20 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_necklace.js, timeout=650, wake-system=1, tag=点点券
-#京喜工厂
-cron "24 * * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_dreamFactory.js, timeout=650, wake-system=1, tag=京喜工厂
-#东东工厂
-cron "40 * * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdfactory.js, timeout=650, wake-system=1, tag=东东工厂
-#东东小窝
-cron "10 7 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_small_home.js, timeout=650, wake-system=1, tag=东东小窝
-#十元街
-cron "40 8 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_syj.js, timeout=650, wake-system=1, tag=十元街
-#领京豆额外奖励
-cron "30 10 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_home.js, timeout=750, wake-system=1, tag=领京豆额外奖励
-#京东汽车
-cron "0 10 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car.js, timeout=750, wake-system=1, tag=京东汽车
-#京东汽车积分兑换京豆
-cron "0 0 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js, timeout=2750, wake-system=1, tag=京东汽车积分兑换京豆
-#京东快递签到
-cron "20 11 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_kd.js, timeout=750, wake-system=1, tag=京东快递签到
-#京东直播(活动结束时间未知)
-cron "20 12 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_live.js, timeout=750, wake-system=1, tag=京东直播
-#京东赚赚
-cron "20 11 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdzz.js, timeout=750, wake-system=1, tag=京东赚赚
-#注销京东店铺会员卡
-cron "20 12 * * 6" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unbind.js, timeout=750, wake-system=1, tag=注销京东店铺会员卡
-#疯狂的joy日常任务
-cron "30 8 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy.js, timeout=1750, wake-system=1, tag=疯狂的joy日常任务
-#签到领现金
-签到领现金 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=2220,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_cash.js
-#环球挑战赛
+# > 获取京东Cookie 
+# >>> 获取地址在下方,复制到浏览器打开,使用手机号登陆,点击签到即可
+#bean.m.jd.com
+获取京东Cookie = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# > 京东京豆系列
+# >>> 取消关注 {23:59}
+取消关注 = type=cron, cronexp="30 59 23 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_unsubscribe.js
+# >>> 京东京豆 {*/12:01} (双号执行时长 60s 左右)
+京豆 = type=cron, cronexp="0 1 */12 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+# >>> 京东京豆变动 {09:00}
+京豆变动通知 = type=cron, cronexp="0 0 9 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_change.js
+
+# > 游戏京豆系列
+# >>> 兑换类
+# >>>>> 宠汪汪兑换京豆 {07:59 15:59}
+宠汪汪——兑换京豆 = type=cron, cronexp="0 0 8,16 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_reward.js
+# >>>>> 第一次执行,大概率失败 {23：59}
+东东超市——第一次兑换京豆 = type=cron, cronexp="59 59 23 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_blueCoin.js
+# >>>>> 第二次执行,可以执行完毕 {00:02}
+东东超市——第二次兑换京豆 = type=cron, cronexp="30 2 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_blueCoin.js
+# >>>>> 京东汽车兑换京豆 {00:00}
+京东汽车——京豆 = type=cron, cronexp="0 0 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car_exchange.js
+
+# >>> 宠汪汪系列
+# >>>>> 辅助脚本
+聚宝盆辅助 = type=http-response, pattern=^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox, requires-body=1, max-size=0, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_petTreasureBox.js
+# >>>>> 偷粮 {00:04 06:04}
+宠汪汪——偷粮 = type=cron,cronexp="30 4 0,6 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_steal.js
+# >>>>> 喂食 (不追求每日"8"次全部成功,单独分"7"次执行,以确保成功喂食，从早上开始每次喂食间隔 183 分钟)
+宠汪汪——首次 = type=cron, cronexp="0 30 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js
+宠汪汪——起床 = type=cron, cronexp="0 51 5 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js
+宠汪汪——早餐 = type=cron, cronexp="0 54 8 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy.js
+宠汪汪——午餐 = type=cron, cronexp="0 57 11 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy.js
+宠汪汪——午茶 = type=cron, cronexp="0 1 15 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js
+宠汪汪——晚餐 = type=cron, cronexp="0 4 18 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy.js
+宠汪汪——宵夜 = type=cron, cronexp="0 7 21 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_joy_feedPets.js
+
+# >>> 东东农场 {06:00 12:00 18:00}
+东东农场 = type=cron, cronexp="0 0 6-18/6 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_fruit.js
+
+# >>> 种豆得豆系列
+# >>>>> 凌晨时段可以领取一瓶营养液 {00:04}
+种豆得豆——凌晨时段 = type=cron, cronexp="0 4 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_plantBean.js
+# >>>>> 其余时段 {22,7-21/2:00}
+种豆得豆——整点时段 = type=cron, cronexp="0 0 22,7-21/2 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_plantBean.js
+
+# >>> 东东超市 {00:05 09:05 17:05} (0点可能上架蓝币商品)
+东东超市 = type=cron, cronexp="0 5 0,9-17/8 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_superMarket.js
+
+# >>> 摇京豆 {00:06}
+摇京豆 = type=cron,cronexp="30 6 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_club_lottery.js
+
+# >>> 京东赚赚 {00:07}
+京东赚赚 = type=cron, cronexp="0 0 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_jdzz.js
+
+# >>> 全民开红包 {00:08}
+全民开红包 = type=cron,cronexp="0 8 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_redPacket.js
+
+# >>> 进店领豆 {00:08}
+进店领豆 = type=cron,cronexp="30 8 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_shop.js
+
+# >>> 抽奖机 {00:09}
+抽奖机 = type=cron,cronexp="0 9 0 * * *",wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_lotteryMachine.js
+
+# >>> 天天加速 {1-23/2:05}
+天天加速 = type=cron, cronexp="0 5 1-23/2 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_speed.js
+
+# >>> 东东小窝 {00:09}
+东东小窝 = type=cron,cronexp="30 9 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_small_home.js
+
+# >>> 十元街 {00:10}
+十元街 = type=cron, cronexp="0 10 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_syj.js
+
+# >>> 京东快递签到 {00:10}
+京东快递签到 = type=cron, cronexp="30 10 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_kd.js
+
+# >>> 签到领现金 {00:11}
+签到领现金 = type=cron, cronexp="0 11 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_cash.js
+
+# >>> 京喜签到 {00:11}
+京喜签到 = type=cron, cronexp="30 11 0 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jx_sign.js
+
+# >>> 领京豆额外奖励 {07:10}
+# >>>>> 活动入口：首页--领京豆
+领京豆额外奖励 = type=cron, cronexp="0 10 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bean_home.js
+
+# >>> 京东汽车 {07:10}
+# >>>>> 活动入口：首页--京东汽车--屏幕右中部--车主福利
+京东汽车 = type=cron, cronexp="30 10 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_car.js
+
+# >>> 口袋书店
+口袋书店 = type=cron, cronexp="1 8,12,18 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_bookshop.js
+
+# >>> 京东家庭号
+京东家庭号 = type=cron, cronexp="0 15 */7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_family.js
+
+# >>> 超级直播间红包雨 (截止日期不清楚)
+超级直播间红包雨 = type=cron, cronexp="0 30,31 20-23/1 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/shylocks/jd_scripts/raw/once/jd_live_redRain_26.js
+
+# >>> 疯狂的Joy (截止日期不清楚)
+疯狂的Joy = type=cron, cronexp="10 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy.js
+# >>> 环球挑战赛 (2-22)
 环球挑战赛 = type=cron,cronexp="0 9,12,20,21 2-22 2 *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_global.js
+
+# > BoxJs TF 
+# >>> 地址在下方,复制到浏览器打开即可
+#boxjs.net
+Rewrite: BoxJs = type=http-request, pattern=^https?://boxjs.net, script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js, requires-body=true, timeout=120
+
+[MITM]
+hostname = %APPEND% api.m.jd.com, jdjoy.jd.com, draw.jdfcloud.com, boxjs.net
+
+[URL Rewrite]
+^https://boxjs.net http://boxjs.net 302
