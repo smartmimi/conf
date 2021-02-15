@@ -12,13 +12,7 @@
       "author": "@smartmimi",
       "repo": "https://github.com/lxk0301/scripts",
       "script": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/jd_get_share_code.js",
-      "icons": [
-        "https://avatars2.githubusercontent.com/u/21308593?s=460&u=c679f6e010b6c33ede1ae099c33a3a1152555630&v=4",
-      ],
-      "scripts": [{
-        "name": "获取互助码",
-        "script": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/jd_get_share_code.js"
-      }]
+      "icons":  "https://avatars2.githubusercontent.com/u/21308593?s=460&u=c679f6e010b6c33ede1ae099c33a3a1152555630&v=4"
     }
   ]
 }
