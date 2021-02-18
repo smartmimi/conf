@@ -2,7 +2,7 @@
   "id": "others.app.sub",
   "name": "smartmimi",
   "author": "@others",
-  "icon": "https://avatars0.githubusercontent.com/u/33308659?s=460&u=9223074586cb14f2ae7ee0953515f8781ded8be9&v=4",
+  "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/miniphoto.jpeg",
   "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
   "apps": [
     {
@@ -10,9 +10,9 @@
       "name": "获取京东互助码",
       "keys": [],
       "author": "@smartmimi",
-      "repo": "https://github.com/lxk0301/scripts",
+      "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
       "script": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/jd_get_share_code.js",
-      "icons":  "https://avatars2.githubusercontent.com/u/21308593?s=460&u=c679f6e010b6c33ede1ae099c33a3a1152555630&v=4"
+      "icons":  "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/miniphoto.jpeg"
     }
   ]
 }
