@@ -109,6 +109,8 @@
 疯狂的Joy = type=cron, cronexp="10 7 * * *", wake-system=1, timeout=600, script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_crazy_joy.js
 # >>> 环球挑战赛 (2-22)
 环球挑战赛 = type=cron,cronexp="0 9,12,20,21 2-22 2 *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_global.js
+# >>> 女装盲盒 (2-25)
+女装盲盒 = type=cron,cronexp="0 7 19-25 2 *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_nzmh.js
 
 # > BoxJs TF 
 # >>> 地址在下方,复制到浏览器打开即可
