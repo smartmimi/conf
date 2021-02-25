@@ -2,7 +2,7 @@
 #!desc=Nexitally流量查询
 #!system=ios
 [Script]
-Nexitally_data.js = script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/DataQuery.js,requires-body=1,pattern=^https:\/\/www\.nenode\.best\/downloadConfig\/NodeList\.aspx\?urk\=(.*?)$,type=http-response
+Nexitally_data.js = script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/DataQuery.js,requires-body=1,pattern=^https:\/\/www\.nenode\.best\/downloadConfig\/NodeList\.aspx\?urk\=(.*?)$,type=http-headers
 [MITM]
 hostname = %INSERT% www.nenode.best
 
