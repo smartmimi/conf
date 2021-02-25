@@ -1,3 +1,4 @@
 let headers = $response.headers;
-$notification.post({headers});
+let headjson = JSON.parse(headers);
+$notification.post(headjson);
 $done({});
