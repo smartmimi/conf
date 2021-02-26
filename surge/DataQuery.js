@@ -20,5 +20,5 @@ let total3 = total2.exec(total1);
 let r3 = (total3 / (1024 * 1024 * 1024)).toFixed(2);
 let r4 = (r3 - r1 - r2).toFixed(2);
 let flow = "上传：" + r1 +" G\n下载：" + r2 + " G\n剩余：" + r4 +" G";
-$notification.post("流量查询","佩奇",flow);
+$notification.post("佩奇流量查询",flow,);
 $done({});
