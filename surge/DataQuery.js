@@ -1,5 +1,5 @@
 /*
-无效，待施工
+根据response.header，获取流量使用情况
 */
 let headers = $response.headers;
 let sub = headers["subscription-userinfo"].toString();
