@@ -3,5 +3,5 @@
 */
 let headers = $response.headers;
 let headjson = JSON.stringify(headers);
-$notification.post("佩奇流量",,headjson);
+$notification.post("佩奇流量","查询",headjson);
 $done({});
