@@ -3,6 +3,9 @@
 # >> Cloudflare
 DOMAIN-SUFFIX,cloudflareresolve.com,force-remote-dns
 
+# >> lxk0301
+DOMAIN-SUFFIX,jdsharedresourcescdn.azureedge.net/jdresource/lxk0301_Task.sgmodule.sgmodule,force-remote-dns
+
 # Clubhouse
 DOMAIN-SUFFIX,clubhouseapi.com
 DOMAIN-SUFFIX,joinclubhouse.com
