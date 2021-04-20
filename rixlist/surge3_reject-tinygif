@@ -1,2 +1,2 @@
 DOMAIN,non-exist.rixcloud.com
-URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start
+#URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start
