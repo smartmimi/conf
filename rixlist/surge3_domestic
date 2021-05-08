@@ -1,11 +1,5 @@
 # --- Mainland China Available --
 
-# >>rixCloud
-DOMAIN,doh.rixcloud.dev
-DOMAIN-SUFFIX,rixcloudstatus.com
-DOMAIN-SUFFIX,rixcloudstatus.io
-DOMAIN-SUFFIX,rixcloud.fail
-
 # >> 360
 DOMAIN-SUFFIX,qhimg.com
 DOMAIN-SUFFIX,qhres.com
