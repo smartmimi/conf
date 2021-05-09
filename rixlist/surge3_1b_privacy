@@ -4466,7 +4466,7 @@ DOMAIN,jampp.com
 DOMAIN,cdn.jampp.com
 DOMAIN,imgx.jampp.com
 DOMAIN,rtb-al-ap.jampp.com
-DOMAIN,union.m.jd.com
+#DOMAIN,union.m.jd.com
 DOMAIN,api.jeeng.com
 DOMAIN,users.api.jeeng.com
 DOMAIN,sdk.jeeng.com
