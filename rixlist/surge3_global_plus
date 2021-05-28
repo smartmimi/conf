@@ -28,6 +28,7 @@ DOMAIN-KEYWORD,google,force-remote-dns
 DOMAIN-SUFFIX,gmail.com,force-remote-dns
 DOMAIN-KEYWORD,blogspot,force-remote-dns
 DOMAIN-SUFFIX,googleapis.cn,force-remote-dns
+DOMAIN-SUFFIX,googleapis.com,force-remote-dns
 
 # >> Facebook
 DOMAIN-SUFFIX,cdninstagram.com,force-remote-dns
