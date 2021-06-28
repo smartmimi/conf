@@ -223,9 +223,9 @@ DOMAIN-SUFFIX,tuanxue360.net
 DOMAIN-SUFFIX,turn.com
 DOMAIN-SUFFIX,uberads.com
 DOMAIN-SUFFIX,udrig.com
-DOMAIN-SUFFIX,umeng.co
-DOMAIN-SUFFIX,umeng.com
-DOMAIN-SUFFIX,umengcloud.com
+#DOMAIN-SUFFIX,umeng.co
+#DOMAIN-SUFFIX,umeng.com
+#DOMAIN-SUFFIX,umengcloud.com
 DOMAIN-SUFFIX,unityads.unity3d.com
 DOMAIN-SUFFIX,upcpi.com
 DOMAIN-SUFFIX,urbanairship.com
