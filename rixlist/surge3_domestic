@@ -7,6 +7,12 @@ DOMAIN-SUFFIX,qhres.com
 # >> Akamai
 DOMAIN-SUFFIX,akadns.net
 
+# >> douyin
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,huoshan.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,iesdouyin.com
+
 # >> Alibaba
 DOMAIN-SUFFIX,alibaba.com
 DOMAIN-SUFFIX,alicdn.com
