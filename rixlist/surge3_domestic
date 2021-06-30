@@ -7,17 +7,6 @@ DOMAIN-SUFFIX,qhres.com
 # >> Akamai
 DOMAIN-SUFFIX,akadns.net
 
-# >> douyin
-DOMAIN-SUFFIX,amemv.com
-DOMAIN-SUFFIX,huoshan.com
-DOMAIN-SUFFIX,douyin.com
-DOMAIN-SUFFIX,snssdk.com
-DOMAIN-SUFFIX,ixiguavideo.com
-DOMAIN-SUFFIX,toutiao.com
-DOMAIN-SUFFIX,iesdouyin.com
-DOMAIN-SUFFIX,ixigua.com
-DOMAIN-SUFFIX,pstatp.com
-
 # >> Alibaba
 DOMAIN-SUFFIX,alibaba.com
 DOMAIN-SUFFIX,alicdn.com
@@ -66,11 +55,20 @@ DOMAIN,blzddist1-a.akamaihd.net
 
 # >> ByteDance
 DOMAIN-SUFFIX,bytecdn.cn
+DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,feiliao.com
 DOMAIN-SUFFIX,iesdouyin.com
 DOMAIN-SUFFIX,pstatp.com
+DOMAIN-SUFFIX,amemv.com
+DOMAIN-SUFFIX,huoshan.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyinvod.com
+DOMAIN-SUFFIX,douyinpic.com
 DOMAIN-SUFFIX,snssdk.com
+DOMAIN-SUFFIX,ixiguavideo.com
 DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,toutiaocloud.com
 
 # > CCTV
 DOMAIN-SUFFIX,cctv.com
