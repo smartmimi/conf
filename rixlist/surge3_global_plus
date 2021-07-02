@@ -102,7 +102,6 @@ DOMAIN-SUFFIX,shadowsocks.org,force-remote-dns
 DOMAIN-SUFFIX,slideshare.net,force-remote-dns
 DOMAIN-SUFFIX,soundcloud.com,force-remote-dns
 DOMAIN-SUFFIX,steamcommunity.com,force-remote-dns
-DOMAIN-SUFFIX,telegram.org,force-remote-dns
 DOMAIN-SUFFIX,theinitium.com,force-remote-dns
 DOMAIN-SUFFIX,tineye.com,force-remote-dns
 DOMAIN-SUFFIX,tumblr.com,force-remote-dns
