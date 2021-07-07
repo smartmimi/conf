@@ -34,7 +34,7 @@ DOMAIN,gs-loc-cn.apple.com
 # >> Baidu
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidubcr.com
-DOMAIN-SUFFIX,bdstatic.com
+#DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,yunjiasu-cdn.net
 
 
