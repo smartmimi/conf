@@ -31,8 +31,6 @@ DOMAIN,log.ys7.com
 DOMAIN,logs.chelaile.net.cn
 DOMAIN,mopnativeadv.037201.com
 DOMAIN,nativeadv.dftoutiao.com
-DOMAIN,nadvieo2.baidu.com
-DOMAIN,nadvieo.baidu.com
 DOMAIN,report.jpush.cn
 DOMAIN,s0.2mdn.net
 DOMAIN,stat.loli.net
@@ -323,6 +321,8 @@ DOMAIN,hm.baidu.com
 DOMAIN,hmma.baidu.com
 DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
+DOMAIN,nadvieo2.baidu.com
+DOMAIN,nadvieo.baidu.com
 DOMAIN,nsclick.baidu.com
 DOMAIN,wn.pos.baidu.com
 DOMAIN,ps.map.baidu.com
