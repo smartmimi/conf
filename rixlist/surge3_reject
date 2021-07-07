@@ -316,6 +316,7 @@ DOMAIN,advertise.baicizhan.com
 
 # >> Baidu
 DOMAIN-SUFFIX,baidustatic.com
+DOMAIN-SUFFIX,bdstatic.com
 DOMAIN,duclick.baidu.com
 DOMAIN,hm.baidu.com
 DOMAIN,hmma.baidu.com
