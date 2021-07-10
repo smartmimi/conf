@@ -184,22 +184,20 @@ DOMAIN-SUFFIX,miwifi.com
 DOMAIN-SUFFIX,xiaomi.com
 
 # >> Microsoft
-DOMAIN,officecdn-microsoft-com.akamaized.net
-
-DOMAIN-KEYWORD,officecdn
-
-DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,microsoftstore.com.cn
-DOMAIN-SUFFIX,msecnd.net
-DOMAIN-SUFFIX,msftconnecttest.com
-DOMAIN-SUFFIX,msftncsi.com
-DOMAIN-SUFFIX,outlook.com
-DOMAIN-SUFFIX,s-microsoft.com
-DOMAIN-SUFFIX,sfx.ms
-DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,visualstudio.com
-DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windowsupdate.com
+#DOMAIN,officecdn-microsoft-com.akamaized.net
+#DOMAIN-KEYWORD,officecdn
+#DOMAIN-SUFFIX,microsoft.com
+#DOMAIN-SUFFIX,microsoftstore.com.cn
+#DOMAIN-SUFFIX,msecnd.net
+#DOMAIN-SUFFIX,msftconnecttest.com
+#DOMAIN-SUFFIX,msftncsi.com
+#DOMAIN-SUFFIX,outlook.com
+#DOMAIN-SUFFIX,s-microsoft.com
+#DOMAIN-SUFFIX,sfx.ms
+#DOMAIN-SUFFIX,sharepoint.com
+#DOMAIN-SUFFIX,visualstudio.com
+#DOMAIN-SUFFIX,windows.com
+#DOMAIN-SUFFIX,windowsupdate.com
 
 # Rainway
 DOMAIN,cya.gg
