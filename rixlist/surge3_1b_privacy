@@ -1684,7 +1684,7 @@ DOMAIN,fvalid.appsflyer.com
 DOMAIN,gcdsdk.appsflyer.com
 DOMAIN,hq1.appsflyer.com
 DOMAIN,impression.appsflyer.com
-DOMAIN,inapps.appsflyer.com
+#DOMAIN,inapps.appsflyer.com
 DOMAIN,launches.appsflyer.com
 DOMAIN,monitorsdk.appsflyer.com
 DOMAIN,onelink.appsflyer.com
@@ -2100,7 +2100,7 @@ DOMAIN,client-analytics.braintreegateway.com
 DOMAIN,branch.io
 DOMAIN,api.branch.io
 #DOMAIN,api2.branch.io
-DOMAIN,cdn.branch.io
+#DOMAIN,cdn.branch.io
 DOMAIN,vulcan.branch.io
 DOMAIN,collector.brandify.com
 DOMAIN,iad-01.braze.com
