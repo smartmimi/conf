@@ -86,7 +86,7 @@ DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,analysys.cn
 DOMAIN-SUFFIX,api.appsee.com
 DOMAIN-SUFFIX,app-adforce.jp
-DOMAIN-SUFFIX,app-measurement.com
+#DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,appboy.com
 DOMAIN-SUFFIX,appier.net
 DOMAIN-SUFFIX,appnext.com
