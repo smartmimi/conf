@@ -1407,7 +1407,7 @@ DOMAIN,api.ampiri.com
 DOMAIN,signals.ampiri.com
 DOMAIN,analytics.amplitude.com
 DOMAIN,api.amplitude.com
-DOMAIN,api2.amplitude.com
+#DOMAIN,api2.amplitude.com
 DOMAIN,cdn.amplitude.com
 DOMAIN,info.amplitude.com
 DOMAIN,regionconfig.amplitude.com
