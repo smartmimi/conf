@@ -1685,7 +1685,7 @@ DOMAIN,gcdsdk.appsflyer.com
 DOMAIN,hq1.appsflyer.com
 DOMAIN,impression.appsflyer.com
 #DOMAIN,inapps.appsflyer.com
-DOMAIN,launches.appsflyer.com
+#DOMAIN,launches.appsflyer.com
 DOMAIN,monitorsdk.appsflyer.com
 DOMAIN,onelink.appsflyer.com
 DOMAIN,register.appsflyer.com
