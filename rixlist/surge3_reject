@@ -90,7 +90,7 @@ DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,appboy.com
 DOMAIN-SUFFIX,appier.net
 DOMAIN-SUFFIX,appnext.com
-DOMAIN-SUFFIX,appsflyer.com
+#DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,apptentive.com
 DOMAIN-SUFFIX,atwola.com
 DOMAIN-SUFFIX,bidswitch.com
