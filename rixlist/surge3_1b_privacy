@@ -2099,7 +2099,7 @@ DOMAIN,tag.brainient.com
 DOMAIN,client-analytics.braintreegateway.com
 DOMAIN,branch.io
 DOMAIN,api.branch.io
-DOMAIN,api2.branch.io
+#DOMAIN,api2.branch.io
 DOMAIN,cdn.branch.io
 DOMAIN,vulcan.branch.io
 DOMAIN,collector.brandify.com
