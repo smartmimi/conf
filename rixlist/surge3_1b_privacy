@@ -331,7 +331,7 @@ DOMAIN,r8qs.adj.st
 DOMAIN,sxj8.adj.st
 DOMAIN,uy2r.adj.st
 DOMAIN,adjust.com
-DOMAIN,app.adjust.com
+#DOMAIN,app.adjust.com
 DOMAIN,s2s.adjust.com
 DOMAIN,ulink.adjust.com
 DOMAIN,39810146b3f05dad26eec7ad4727361a.ulink.adjust.com
