@@ -1,6 +1,7 @@
 #来自tg群友（surge pro群）@mieqq从1block中提取出来的隐私保护的域名清单
 #来源https://raw.githubusercontent.com/mieqq/mieqq/master/In-AppTracker.txt
 #删除部分与surge3_reject重复的
+#windy.app相关追踪，在335、1411、1688、1689、2103、2104
 DOMAIN,analytics.163.com
 DOMAIN,crash.163.com
 DOMAIN,crashlytics.163.com
@@ -331,7 +332,7 @@ DOMAIN,r8qs.adj.st
 DOMAIN,sxj8.adj.st
 DOMAIN,uy2r.adj.st
 DOMAIN,adjust.com
-#DOMAIN,app.adjust.com
+DOMAIN,app.adjust.com
 DOMAIN,s2s.adjust.com
 DOMAIN,ulink.adjust.com
 DOMAIN,39810146b3f05dad26eec7ad4727361a.ulink.adjust.com
@@ -1407,7 +1408,7 @@ DOMAIN,api.ampiri.com
 DOMAIN,signals.ampiri.com
 DOMAIN,analytics.amplitude.com
 DOMAIN,api.amplitude.com
-#DOMAIN,api2.amplitude.com
+DOMAIN,api2.amplitude.com
 DOMAIN,cdn.amplitude.com
 DOMAIN,info.amplitude.com
 DOMAIN,regionconfig.amplitude.com
@@ -1684,8 +1685,8 @@ DOMAIN,fvalid.appsflyer.com
 DOMAIN,gcdsdk.appsflyer.com
 DOMAIN,hq1.appsflyer.com
 DOMAIN,impression.appsflyer.com
-#DOMAIN,inapps.appsflyer.com
-#DOMAIN,launches.appsflyer.com
+DOMAIN,inapps.appsflyer.com
+DOMAIN,launches.appsflyer.com
 DOMAIN,monitorsdk.appsflyer.com
 DOMAIN,onelink.appsflyer.com
 DOMAIN,register.appsflyer.com
@@ -2099,8 +2100,8 @@ DOMAIN,tag.brainient.com
 DOMAIN,client-analytics.braintreegateway.com
 DOMAIN,branch.io
 DOMAIN,api.branch.io
-#DOMAIN,api2.branch.io
-#DOMAIN,cdn.branch.io
+DOMAIN,api2.branch.io
+DOMAIN,cdn.branch.io
 DOMAIN,vulcan.branch.io
 DOMAIN,collector.brandify.com
 DOMAIN,iad-01.braze.com
