@@ -1,5 +1,5 @@
 # --- AD Block ---
-
+#windy.app相关追踪在89、93行
 # >> General
 DOMAIN,abema-adx.ameba.jp
 DOMAIN,ad-cn.jovcloud.com
@@ -86,11 +86,11 @@ DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,analysys.cn
 DOMAIN-SUFFIX,api.appsee.com
 DOMAIN-SUFFIX,app-adforce.jp
-#DOMAIN-SUFFIX,app-measurement.com
+DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,appboy.com
 DOMAIN-SUFFIX,appier.net
 DOMAIN-SUFFIX,appnext.com
-#DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,apptentive.com
 DOMAIN-SUFFIX,atwola.com
 DOMAIN-SUFFIX,bidswitch.com
