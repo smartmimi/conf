@@ -1,4 +1,4 @@
 #!name=10086REJECT
-#!desc=禁用10086网络，防止偷跑日租包
+#!desc=禁用10086网络，防止偷跑日租包,460-00表示移动，460-01表示联通
 [Rule]
 CELLULAR-CARRIER,460-00,REJECT,notification-text="触发移动网络"
