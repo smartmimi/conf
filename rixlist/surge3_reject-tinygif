@@ -1,5 +1,1 @@
 DOMAIN,non-exist.rixcloud.com
-#DOMAIN-SUFFIX,umeng.co
-#DOMAIN-SUFFIX,umeng.com
-#DOMAIN-SUFFIX,umengcloud.com
-#URL-REGEX,^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start
