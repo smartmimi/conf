@@ -1,18 +1,17 @@
 {
-  "id": "moi",
-  "name": "moicookies",
-  "author": "@moi",
+  "id": "vinewx.app.sub",
+  "name": "vinewx应用订阅",
+  "author": "@vinewx",
   "icon": "https://avatars0.githubusercontent.com/u/19585001?s=460&u= 2f5028cbd0896ebdda4efa12a8e484b56c97d424&v=4",
   "apps": [
     {
-      "id": "bwg",
-      "name": "搬瓦工流量",
-      "settings": [
-        {
-          "veid": "123",
-          "api_key": "123",
-        }
-      ],
+      "id": "umer",
+      "name": "优麦医生",
+      "keys": ["@UMER.CookieUM"],
+      "author": "@vinewx",
+      "repo": "https://ooxx.be/js",
+      "icons": ["https://ooxx.be/js/icon/umer-trn.png", "https://ooxx.be/js/icon/umer.png"],
+      "script": "https://ooxx.be/js/umer.js"
     }
   ]
 }
