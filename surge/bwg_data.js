@@ -1,5 +1,11 @@
 const veid = $persistentStore.read("bwgid") ;
 const api_key = $persistentStore.read("bwgkey") ;
+if (!(veid&&api_key)){
+  $done({
+   title: "Bwg_Data",
+   style: "info",
+   content: "请在boxjs中完善信息"
+  });
 let url = "https://api.64clouds.com/v1/getServiceInfo?veid="+veid+"&api_key="+api_key;
 $httpClient.get(url, function(error, response, data){
 let resp = JSON.parse(data)
