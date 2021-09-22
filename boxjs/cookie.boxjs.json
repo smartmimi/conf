@@ -2,7 +2,7 @@
   "id": "moi",
   "name": "moicookie",
   "author": "@moi",
-  "icon": "https://avatars3.githubusercontent.com/u/29748519?s=460&u=392a19e85465abbcb1791c9b8b32184a16e6795e&v=4",
+  "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/moi.jpg",
   "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
   "apps": [
     {
@@ -35,8 +35,7 @@
       "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/boxjs/bwg_data.js",
       "icons": [
-        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/10000.png",
-        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10000.png"
+        "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/moi.jpg"
       ]
     }
   ]
