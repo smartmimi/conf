@@ -6,7 +6,7 @@ if (!(veid&&api_key)){
    style: "info",
    content: "请在boxjs中完善信息"
   })
-}；
+};
 let url = "https://api.64clouds.com/v1/getServiceInfo?veid="+veid+"&api_key="+api_key;
 $httpClient.get(url, function(error, response, data){
   let resp = JSON.parse(data)
