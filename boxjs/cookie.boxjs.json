@@ -29,7 +29,7 @@
           "autoGrow": true,
           "rows": 1,
           "desc": "输入搬瓦工key"
-        },
+        }
       ],
       "author": "@moi",
       "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
