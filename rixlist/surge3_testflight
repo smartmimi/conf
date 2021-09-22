@@ -1,0 +1,4 @@
+# >> testflight
+DOMAIN-SUFFIX,testflight.apple.com,TestFlight
+DOMAIN-SUFFIX,beta.apple.com,TestFlight
+DOMAIN-KEYWORD,testflight,TestFlight
