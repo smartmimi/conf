@@ -24,7 +24,7 @@ $httpClient.get(url, function(error, response, data){
     $done({
      title: "搬瓦工流量",
      icon : "airplane.circle.fill",
-     content: "已用： " + datares + " / "+datatotal+" G\n"+"重置： " + reset
+     content: "已用： " + datares + "  /  "+datatotal+" G\n"+"重置： " + reset
      });
     }
 });
