@@ -28,7 +28,7 @@
           "placeholder": "abcdefgh",
           "autoGrow": true,
           "rows": 1,
-          "desc": "输入搬瓦工api得key"
+          "desc": "输入搬瓦工api的key"
         }
       ],
       "author": "@moi",
