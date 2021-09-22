@@ -2,17 +2,42 @@
   "id": "moi",
   "name": "moicookie",
   "author": "@moi",
-  "icon": "https://avatars0.githubusercontent.com/u/19585001?s=460&u= 2f5028cbd0896ebdda4efa12a8e484b56c97d424&v=4",
+  "icon": "https://avatars3.githubusercontent.com/u/29748519?s=460&u=392a19e85465abbcb1791c9b8b32184a16e6795e&v=4",
+  "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
   "apps": [
     {
       "id": "bwg",
-      "name": "搬瓦工流量",
+      "name": "bwg",
+      "keys": [],
       "settings": [
         {
-          "veid": "123",
-          "api_key": "123",
-        }
+          "id": "veid",
+          "name": "api-id",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "123456",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入搬瓦工api"
+        },
+        {
+          "id": "key",
+          "name": "api-key",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "abcdefgh",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入搬瓦工key"
+        },
       ],
-    }
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/boxjs/bwg_data.js",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/10000.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/10000.png"
+      ]
+    },
   ]
 }
