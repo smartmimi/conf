@@ -1,5 +1,5 @@
-const veid = "";
-const api_key = "";
+const veid = $persistentStore.read("bwgid") ;
+const api_key = $persistentStore.read("bwgkey") ;
 let url = "https://api.64clouds.com/v1/getServiceInfo?veid="+veid+"&api_key="+api_key;
 $httpClient.get(url, function(error, response, data){
 let resp = JSON.parse(data)
