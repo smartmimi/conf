@@ -1,4 +1,0 @@
-#!name=奥运金牌榜
-#!desc=奥运金牌榜
-[Script]
-奥运会奖牌数 = type=cron,cronexp=0 8-18/3 * * *,wake-system=1,timeout=60, script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/OlympicRanking.js
