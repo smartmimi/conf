@@ -11,24 +11,24 @@
       "keys": [],
       "settings": [
         {
-          "id": "veid",
-          "name": "api-id",
+          "id": "bwgid",
+          "name": "搬瓦工id",
           "val": "",
           "type": "textarea",
           "placeholder": "123456",
           "autoGrow": true,
           "rows": 1,
-          "desc": "输入搬瓦工api"
+          "desc": "输入搬瓦工api的id"
         },
         {
-          "id": "key",
-          "name": "api-key",
+          "id": "bwgkey",
+          "name": "搬瓦工key",
           "val": "",
           "type": "textarea",
           "placeholder": "abcdefgh",
           "autoGrow": true,
           "rows": 1,
-          "desc": "输入搬瓦工key"
+          "desc": "输入搬瓦工api得key"
         }
       ],
       "author": "@moi",
