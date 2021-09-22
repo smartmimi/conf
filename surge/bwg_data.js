@@ -5,10 +5,11 @@ if (!(veid&&api_key)){
    title: "Bwg_Data",
    style: "info",
    content: "请在boxjs中完善信息"
-  });
+  })
+}；
 let url = "https://api.64clouds.com/v1/getServiceInfo?veid="+veid+"&api_key="+api_key;
 $httpClient.get(url, function(error, response, data){
-let resp = JSON.parse(data)
+  let resp = JSON.parse(data)
   let data_next_reset = resp["data_next_reset"];
   let datares = (resp["data_counter"] / (1024 * 1024 * 1024)).toFixed(2);
   let datatotal = (resp["plan_monthly_data"] / (1024 * 1024 * 1024)).toFixed(0);
