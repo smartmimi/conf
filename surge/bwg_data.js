@@ -3,7 +3,7 @@ const api_key = $persistentStore.read("bwgkey") ;
 if (!(veid&&api_key)){
   $done({
    title: "搬瓦工流量",
-   style: "info",
+   style: "error",
    content: "请在boxjs中完善信息"
   })
 };
@@ -13,8 +13,8 @@ $httpClient.get(url, function(error, response, data){
   if (resp["error"]){
     $done({
     title: "搬瓦工流量",
-    style: "info",
-     content: "api验证失败，请检查后重试"
+    style: "error",
+    content: "api验证失败，请检查后重试"
     });
   }else{
     let data_next_reset = resp["data_next_reset"];
