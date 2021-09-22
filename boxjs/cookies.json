@@ -7,8 +7,7 @@
     {
       "id": "bwg",
       "name": "搬瓦工流量",
-
-      settings": [
+      "settings": [
         {
           "veid": "123",
           "api_key": "123",
