@@ -32,10 +32,10 @@
         }
       ],
       "author": "@moi",
-      "repo": "https://github.com/smartmimi/conf/tree/master/boxjs",
-      "script": "https://github.com/smartmimi/conf/tree/master/boxjs/bwg_data.js",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/bwg_data.js",
       "icons": [
-        "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/moi.jpg"
+        "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.png"
       ]
     }
   ]
