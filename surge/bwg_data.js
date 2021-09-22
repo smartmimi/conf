@@ -23,7 +23,7 @@ $httpClient.get(url, function(error, response, data){
     let reset = redate(data_next_reset);
     $done({
      title: "Bwg_Data",
-     style: "info",
+     icon : "airplane.circle.fill",
      content: "已用： " + datares + "/"+datatotal+" G\n"+"重置： " + reset
      });
     }
