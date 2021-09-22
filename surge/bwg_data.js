@@ -10,7 +10,7 @@ let resp = JSON.parse(data)
   $done({
    title: "Bwg_Data",
    style: "info",
-   content: "已用： " + datares + "/"+datatotal+"G\n"+"重置： " + reset
+   content: "已用： " + datares + "/"+datatotal+" G\n"+"重置： " + reset
   });
 });
 function redate(datein) {
