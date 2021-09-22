@@ -34,9 +34,7 @@
       "author": "@moi",
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/surge/bwg_data.js",
-      "icons": [
-        "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"
-      ]
+      "icons": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"
     }
   ]
 }
