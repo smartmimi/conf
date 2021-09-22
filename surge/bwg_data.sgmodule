@@ -4,12 +4,3 @@
 PanelBwg = title="Bwg_Data",content="e",style=info,script-name=bwg_data
 [Script]
 bwg_data = script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/bwg_data.js,type=generic
-
-
-
-
-
-
-
-
-
