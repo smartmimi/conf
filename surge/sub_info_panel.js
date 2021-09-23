@@ -29,7 +29,7 @@ Sub_info = script-name=Sub_info
   let usage = await getDataUsage(urlcode);
   let used = usage.download + usage.upload;
   let total = usage.total;
-  let expire = usage.expire || params.expire;
+  let expire = usage.expire || $persistentStore.read("airport_expire");
   let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   if (resetLeft) {
