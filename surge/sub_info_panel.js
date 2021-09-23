@@ -22,9 +22,10 @@ Sub_info = script-name=Sub_info
 */
 
 (async () => {
-  let resetDay = parseInt($persistentStore.read("rest_day") );
+  let sub_title = $persistentStore.read("airport_title");
+  let resetDay = parseInt($persistentStore.read("airport_rest_day") );
   let resetLeft = getRmainingDays(resetDay);
-  let urlcode = encodeURIComponent($persistentStore.read("url"));
+  let urlcode = encodeURIComponent($persistentStore.read("airport_url"));
   let usage = await getDataUsage(urlcode);
   let used = usage.download + usage.upload;
   let total = usage.total;
@@ -41,7 +42,7 @@ Sub_info = script-name=Sub_info
 
   let body = infoList.join("\n");
   $done({
-		title: $persistentStore.read("title") ,
+		title:  sub_title,
 		content: body,
                icon :"airplane.circle.fill"
 	});
