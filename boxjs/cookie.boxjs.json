@@ -66,6 +66,16 @@
           "name": "重置时间",
           "val": "",
           "type": "textarea",
+          "placeholder": "3",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入下一次重置的时间（几号），可选"
+        },
+        {
+          "id": "airport_expire",
+          "name": "重置日期",
+          "val": "",
+          "type": "textarea",
           "placeholder": "yyyy-MM-dd",
           "autoGrow": true,
           "rows": 1,
