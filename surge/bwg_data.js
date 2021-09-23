@@ -23,7 +23,7 @@ $httpClient.get(url, function(error, response, data){
     let reset = redate(data_next_reset);
     $done({
      title: "搬瓦工流量",
-     icon : "airplane.circle.fill",
+     icon : "externaldrive.connected.to.line.below",
      content: "已用： " + datares + "GB｜"+datatotal+" GB\n"+"重置： " + reset
      });
     }
