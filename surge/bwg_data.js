@@ -22,7 +22,7 @@ $httpClient.get(url, function(error, response, data){
     let datatotal = (resp["plan_monthly_data"] / (1024 * 1024 * 1024)).toFixed(0);
     let reset = redate(data_next_reset);
     $done({
-     title: "搬瓦工流量",
+     title: "搬瓦工流量"+ "   "+nowtime(),
      icon : "externaldrive.connected.to.line.below",
      content: "已用： " + datares + "GB｜"+datatotal+" GB\n"+"重置： " + reset
      });
@@ -34,4 +34,9 @@ function redate(datein) {
   let month = da.getMonth() + 1;
   let date = da.getDate();
   return [year, month, date].join("-");
+}
+function nowtime(){
+ let now = new Date();
+ let time = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
+ return time
 }
