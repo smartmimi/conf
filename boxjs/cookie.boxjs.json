@@ -61,7 +61,7 @@
           "rows": 1,
           "desc": "输入机场名称"
         }，
-                {
+        {
           "id": "airport_rest_day",
           "name": "重置时间",
           "val": "",
