@@ -80,6 +80,26 @@
           "autoGrow": true,
           "rows": 1,
           "desc": "输入下一次重置的日期，可选"
+        },
+        {
+          "id": "airport_icon",
+          "name": "图标",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "airplane.circle",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入图标名称，可选"
+        },
+        {
+          "id": "airport_color",
+          "name": "图标颜色",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "#007aff",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入图标颜色，可选"
         }
       ],
       "author": "@moi",
