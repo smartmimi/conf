@@ -42,10 +42,10 @@ Sub_info = script-name=Sub_info
 
   let body = infoList.join("\n");
   $done({
-		title:  sub_title,
+		title:  sub_title+ "   "+nowtime(),
 		content: body,
                	icon : $persistentStore.read("airport_icon") ||"externaldrive.connected.to.line.below",
-               	icon-color: $persistentStore.read("airport_color") || "#007aff"
+               	iconColor: $persistentStore.read("airport_color") || "#007aff"
 	});
 })();
 
@@ -98,12 +98,14 @@ function getRmainingDays(resetDay) {
   let year = now.getFullYear();
   if (!resetDay) return 0;
   let daysInMonth = new Date(year, month + 1, 0).getDate();
-  
   if (resetDay > today) daysInMonth = 0;
-
   return daysInMonth - today + resetDay;
 }
-
+function nowtime(){
+ let now = new Date();
+ let time = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
+return time
+}
 function bytesToSize(bytes) {
   if (bytes === 0) return "0B";
   let k = 1024;
@@ -119,3 +121,4 @@ function formatTime(time) {
   let day = dateObj.getDate();
   return year + "年" + month + "月" + day + "日";
 }
+
