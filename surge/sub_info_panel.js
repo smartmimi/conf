@@ -44,7 +44,7 @@ Sub_info = script-name=Sub_info
   $done({
 		title:  sub_title,
 		content: body,
-               icon :"airplane.circle.fill"
+               icon :"externaldrive.connected.to.line.below"
 	});
 })();
 
