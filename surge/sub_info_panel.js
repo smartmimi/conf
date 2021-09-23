@@ -42,10 +42,10 @@ Sub_info = script-name=Sub_info
 
   let body = infoList.join("\n");
   $done({
-		title:  sub_title+ "   "+nowtime(),
-		content: body,
-               	icon : $persistentStore.read("airport_icon") ||"externaldrive.connected.to.line.below",
-               	icon-color: $persistentStore.read("airport_color") || "#007aff"
+	title:  sub_title+ "   "+nowtime(),
+	content: body,
+        icon : $persistentStore.read("airport_icon") ||"externaldrive.connected.to.line.below",
+        icon-color: $persistentStore.read("airport_color") || "#007aff"
 	});
 })();
 
@@ -104,7 +104,7 @@ function getRmainingDays(resetDay) {
 function nowtime(){
  let now = new Date();
  let time = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
-return time
+ return time
 }
 function bytesToSize(bytes) {
   if (bytes === 0) return "0B";
