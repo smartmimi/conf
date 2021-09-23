@@ -44,7 +44,8 @@ Sub_info = script-name=Sub_info
   $done({
 		title:  sub_title,
 		content: body,
-               icon :"externaldrive.connected.to.line.below"
+               	icon : $persistentStore.read("airport_icon") ||"externaldrive.connected.to.line.below",
+               	iconColor: $persistentStore.read("airport_color") || "#007aff"
 	});
 })();
 
