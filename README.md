@@ -17,8 +17,12 @@ https://raw.githubusercontent.com/smartmimi/conf/master/surge/nf_check.sgmodule
 
 ## 3、机场流量信息
 
+需搭配boxjs设置参数
+
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/sub_info_panel.sgmodule
 
 ## 4、搬瓦工流量信息
+
+需搭配boxjs设置参数
 
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/bwg_data.sgmodule
