@@ -1,54 +1,43 @@
 const BASE_URL = 'https://www.netflix.com/title/'
 
+const FILM_ID = 81215567
 const AREA_TEST_FILM_ID = 80018499
-const ORIGINAL_FILM_ID = 80197526
-const NOT_ORIGINAL_FILM_ID = 70143836
 
 ;(async () => {
-  await test(NOT_ORIGINAL_FILM_ID)
+  let result = {
+    title: 'Netflix 解锁检测',
+    style: 'error',
+    content: '检测失败，请刷新',
+  }
+
+  await test(FILM_ID)
     .then((code) => {
-      if (code != 'Not Available') {
-        $done({
-          title: 'Netflix 解锁检测',
-          style: 'good',
-          content: '您的出口 IP 完整解锁 Netflix',
-        })
-        return new Promise(() => {})
+      if (code === 'Not Found') {
+        return test(AREA_TEST_FILM_ID)
       }
-      return test(ORIGINAL_FILM_ID)
+
+      result['style'] = 'good'
+      result['content'] = '完整解锁 Netflix，解锁区域：' + code.toUpperCase()
+      return Promise.reject('BreakSignal')
     })
     .then((code) => {
-      if (code != 'Not Available') {
-        $done({
-          title: 'Netflix 解锁检测',
-          style: 'info',
-          content: '您的出口 IP 仅支持解锁自制剧',
-        })
-        return new Promise(() => {})
+      if (code === 'Not Found') {
+        return Promise.reject('Not Available')
       }
-      return test(AREA_TEST_FILM_ID)
-    })
-    .then((code) => {
-      if (code != 'Not Available') {
-        $done({
-          title: 'Netflix 解锁检测',
-          style: 'alert',
-          content: '您的出口 IP 不支持解锁强版权的自制剧',
-        })
-      } else {
-        $done({
-          title: 'Netflix 解锁检测',
-          style: 'error',
-          content: 'Netflix 不为您的出口 IP 提供服务',
-        })
-      }
+
+      result['style'] = 'info'
+      result['content'] = '仅支持解锁自制剧，解锁区域：' + code.toUpperCase()
+      return Promise.reject('BreakSignal')
     })
     .catch((error) => {
-      $done({
-        title: 'Netflix 解锁检测',
-        style: 'error',
-        content: '检测失败，请重试',
-      })
+      if (error === 'Not Available') {
+        result['style'] = 'alert'
+        result['content'] = '不支持解锁 Netflix'
+        return
+      }
+    })
+    .finally(() => {
+      $done(result)
     })
 })()
 
@@ -67,19 +56,28 @@ function test(filmId) {
         return
       }
 
-      if (response.status !== 200) {
-        resolve('Not Available')
+      if (response.status === 403) {
+        reject('Not Available')
         return
       }
 
-      let url = response.headers['x-originating-url']
-      let local = url.split('/')[3]
-      if (local == 'title') {
-        local = 'us'
-      } else {
-        local = local.split('-')[0]
+      if (response.status === 404) {
+        resolve('Not Found')
+        return
       }
-      resolve(local)
+
+      if (response.status === 200) {
+        let url = response.headers['x-originating-url']
+        let region = url.split('/')[3]
+        region = region.split('-')[0]
+        if (region == 'title') {
+          region = 'us'
+        }
+        resolve(region)
+        return
+      }
+
+      reject('Error')
     })
   })
 }
