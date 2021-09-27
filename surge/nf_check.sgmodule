@@ -3,7 +3,7 @@
 #!system=ios
 
 [Panel]
-nf_check = script-name=nf_check, title="Netflix 解锁检测", update-interval=1
+nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
 
 [Script]
-nf_check = type=generic,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/nf_check.js, timeout=30
+nf_check = type=generic,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/nf_check.js?version=1632728073, timeout=30
