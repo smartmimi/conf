@@ -3,7 +3,7 @@
 #!system=ios
 
 [Script]
-flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/flusnDNS.js
+flushDNS = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/flusnDNS.js,argument=title=刷新DNS缓存&icon=arrow.clockwise&color=#5E5CE6&server=false
 
 [Panel]
 flushDNS = script-name=flushDNS,update-interval=-1
