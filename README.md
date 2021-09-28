@@ -26,3 +26,7 @@ https://raw.githubusercontent.com/smartmimi/conf/master/surge/sub_info_panel.sgm
 需搭配boxjs设置参数
 
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/bwg_data.sgmodule
+
+## 5、youtube解锁检测
+
+https://raw.githubusercontent.com/smartmimi/conf/master/surge/ytb_check.sgmodule
