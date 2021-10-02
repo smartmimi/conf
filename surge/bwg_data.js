@@ -41,7 +41,7 @@ function nowtime(){
  return time
 }
 function precent(res,total){
-  let num = (res / total).toFixed(0);
+  let num = Number(((res / total)*10).toFixed(0));
   let precentprint = '';
   for (var i =1;i<=10;i++){
     if (i <= num) {
