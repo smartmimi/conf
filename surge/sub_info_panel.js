@@ -29,8 +29,9 @@ Sub_info = script-name=Sub_info
   let usage = await getDataUsage(urlcode);
   let used = usage.download + usage.upload;
   let total = usage.total;
+  let prec = precent(bytesToSize(used)bytesToSize(total));
   let expire = usage.expire || $persistentStore.read("airport_expire");
-  let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}`];
+  let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n + prec`];
 
   if (resetLeft) {
     infoList.push(`重置：剩余${resetLeft}天`);
@@ -121,4 +122,15 @@ function formatTime(time) {
   let day = dateObj.getDate();
   return year + "年" + month + "月" + day + "日";
 }
-
+function precent(res,total){
+  let num = (res / total).toFixed(0);
+  let precentprint = '';
+  for (var i =1;i<=10;i++){
+    if (i <= num) {
+      precentprint += '🔴';
+    }else{
+      precentprint += '🟢';
+    }
+  };
+  return precentprint;
+}
