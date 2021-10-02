@@ -24,7 +24,7 @@ $httpClient.get(url, function(error, response, data){
     $done({
      title: "搬瓦工流量"+ "   "+nowtime(),
      icon : "externaldrive.connected.to.line.below",
-     content: "已用： " + datares + "GB｜"+datatotal+" GB\n"+"重置： " + reset
+     content: "已用： " + datares + "GB｜"+datatotal+" GB\n"+"重置： " + precent(datares,datatotal) + reset
      });
     }
 });
@@ -39,4 +39,16 @@ function nowtime(){
  let now = new Date();
  let time = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
  return time
+}
+function precent(res,total){
+  let num = (res / total).toFix(0);
+  let precentprint = '';
+  for (var i =1;i<=10;i++){
+    if (i <= num) {
+      precentprint += '🟢';
+    }else{
+      precentprint += '🔴';
+    }
+  };
+  return precentprint;
 }
