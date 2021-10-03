@@ -74,6 +74,10 @@ DOMAIN-KEYWORD,github
 
 USER-AGENT,Roam*
 
+# >> Paypal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+
 # >> Telegram
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
