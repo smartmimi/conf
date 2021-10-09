@@ -49,63 +49,69 @@ Sub_info = script-name=Sub_info
 	});
 })();
 
-function getUrlParams(url) {
-  return Object.fromEntries(
-    url
-      .split("&")
-      .map((item) => item.split("="))
-      .map(([k, v]) => [k, decodeURIComponent(v)])
-  );
-}
 
 function getUserInfo(url) {
   let request = { headers: { "User-Agent": "Quantumult%20X" }, url };
-  return new Promise((resolve) =>
-    setTimeout(
-      () =>
-        $httpClient.head(request, (err, resp) => {
-          if (err) $done();
-          resolve(
-            resp.headers[
-              Object.keys(resp.headers).find(
-                (key) => key.toLowerCase() === "subscription-userinfo"
-              )
-            ]
-          );
-        }),
-    )
+  return new Promise((resolve, reject) =>
+    $httpClient.head(request, (err, resp) => {
+      if (err != null) {
+        reject(err);
+        return;
+      }
+      if (resp.status !== 200) {
+        reject("Not Available");
+        return;
+      }
+      let header = Object.keys(resp.headers).find(
+        (key) => key.toLowerCase() === "subscription-userinfo"
+      );
+      if (header) {
+        resolve(resp.headers[header]);
+        return;
+      }
+      reject("链接响应头不带有流量信息");
+    })
   );
 }
 
 async function getDataUsage(url) {
-  let info = await getUserInfo(url);
-  if (!info) {
-    $notification.post("SubInfo", "", "链接响应头不带有流量信息");
-    $done();
+  const [err, data] = await getUserInfo(url)
+    .then((data) => [null, data])
+    .catch((err) => [err, null]);
+  if (err) {
+    console.log(err);
+    return;
   }
+
   return Object.fromEntries(
-    info
-      .match(/\w+=\d+/g)
+    data
+      .match(/\w+=[\d.eE+]+/g)
       .map((item) => item.split("="))
       .map(([k, v]) => [k, parseInt(v)])
   );
 }
 
 function getRmainingDays(resetDay) {
+  if (!resetDay) return;
   let now = new Date();
   let today = now.getDate();
   let month = now.getMonth();
   let year = now.getFullYear();
-  if (!resetDay) return 0;
-  let daysInMonth = new Date(year, month + 1, 0).getDate();
-  if (resetDay > today) daysInMonth = 0;
+  let daysInMonth;
+  if (resetDay > today) {
+    daysInMonth = 0;
+  } else {
+    daysInMonth = new Date(year, month + 1, 0).getDate();
+  }
   return daysInMonth - today + resetDay;
 }
+
 function nowtime(){
  let now = new Date();
  let time = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
  return time
 }
+
 function bytesToSize(bytes) {
   if (bytes === 0) return "0B";
   let k = 1024;
@@ -121,6 +127,7 @@ function formatTime(time) {
   let day = dateObj.getDate();
   return year + "年" + month + "月" + day + "日";
 }
+
 function precent(res,total){
   let num = Number(((res / total)*10).toFixed(0));
   let precentprint = '';
