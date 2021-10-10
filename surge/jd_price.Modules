@@ -1,0 +1,7 @@
+#!name=jd_price
+#!desc=京东比价
+[Script]
+#财新周刊
+jd_price.js = https://service.2ti.st/QuanX/Script/jd_tb_price/main.js,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)
+[MITM]
+hostname = %INSERT% api.m.jd.com
