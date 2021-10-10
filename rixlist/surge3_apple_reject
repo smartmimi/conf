@@ -1,4 +1,4 @@
-# 屏蔽苹果的无用链接
+# 屏蔽苹果的无用链接，此列表需要放在surge3_apple_services前面。
 DOMAIN,mesu.apple.com
 DOMAIN,gdmf.apple.com
 DOMAIN,updates-http.cdn-apple.com
