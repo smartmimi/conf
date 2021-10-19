@@ -1,0 +1,15 @@
+#!name=抖音短视频
+#!desc=净化应用内广告 来源：https://github.com/2kuai/Surge/blob/main/Module/Douyin.sgmodule
+#!system=ios
+
+# 最高支持版本为16.2.0
+
+[Rule]
+URL-REGEX,^https?:\/\/api.*\.amemv\.com\/api\/ad\/splash\/,REJECT
+
+[Script]
+douyin_re = type=http-request,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/douyin.js
+douyin_ad = type=http-response,pattern=^https?:\/\/api.*\.amemv\.com\/aweme\/v1\/.+#scripting$,requires-body=1,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/douyin.js
+
+[MITM]
+hostname = %APPEND% api*.amemv.com
