@@ -1,4 +1,4 @@
-DOMAIN,non-exist.rixcloud.com
+#记得要在mitm里添加对应域名，reject-tinygif才会起效（不添加就变成了普通的reject）
 DOMAIN-SUFFIX,umeng.co
 DOMAIN-SUFFIX,umeng.com
 DOMAIN-SUFFIX,umengcloud.com
