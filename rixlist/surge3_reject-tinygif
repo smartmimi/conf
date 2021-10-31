@@ -1,5 +1,7 @@
-#记得要在mitm里添加对应域名，reject-tinygif才会起效（不添加就变成了普通的reject）
-#umeng.co
+# 记得要在mitm里添加对应域名，reject-tinygif才会起效（不添加就变成了普通的reject）
+# *.umeng.com, *.umengcloud.com,*.umeng.co, *.umengcloudlog.com
+# 20211030 禁用此规则，部分app（彩云天气）当mitm umeng相关域名时会闪退。
+# umeng.co
 DOMAIN-SUFFIX,umeng.co
 # umeng.com
 DOMAIN-SUFFIX,ar.umeng.com
