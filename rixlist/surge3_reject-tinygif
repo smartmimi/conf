@@ -1,5 +1,7 @@
 #记得要在mitm里添加对应域名，reject-tinygif才会起效（不添加就变成了普通的reject）
+#umeng.co
 DOMAIN-SUFFIX,umeng.co
+# umeng.com
 DOMAIN-SUFFIX,ar.umeng.com
 DOMAIN-SUFFIX,alog.umeng.com
 DOMAIN-SUFFIX,alogs.umeng.com
@@ -9,7 +11,10 @@ DOMAIN-SUFFIX,msg.umeng.com
 DOMAIN-SUFFIX,plbslog.umeng.com
 DOMAIN-SUFFIX,ulogs.umeng.com
 DOMAIN-SUFFIX,uop.umeng.com
+# umengcloud.com
 DOMAIN-SUFFIX,log.umengcloud.com
+DOMAIN-SUFFIX,ulog.umengcloud.com
+# umengcloudlog.com
 DOMAIN-SUFFIX,logs.umengcloudlog.com
 DOMAIN-SUFFIX,alogs.umengcloudlog.com
 DOMAIN-SUFFIX,alog.umengcloudlog.com
