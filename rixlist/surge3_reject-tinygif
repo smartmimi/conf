@@ -11,9 +11,11 @@ DOMAIN-SUFFIX,msg.umeng.com
 DOMAIN-SUFFIX,plbslog.umeng.com
 DOMAIN-SUFFIX,ulogs.umeng.com
 DOMAIN-SUFFIX,uop.umeng.com
+DOMAIN-SUFFIX,utoken.umeng.com
 # umengcloud.com
 DOMAIN-SUFFIX,log.umengcloud.com
 DOMAIN-SUFFIX,ulog.umengcloud.com
+DOMAIN-SUFFIX,ulogs.umengcloud.com
 # umengcloudlog.com
 DOMAIN-SUFFIX,logs.umengcloudlog.com
 DOMAIN-SUFFIX,alogs.umengcloudlog.com
