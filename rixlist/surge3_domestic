@@ -406,4 +406,7 @@ PROCESS-NAME,WebTorrent Helper
 # >> Tencent AIA
 IP-CIDR,162.14.0.0/18,no-resolve
 
+# >> 影视大全脚本
+DOMAIN-SUFFIX,m3u8.apibdzy.com
+
 # --- End of Mainland China Available Section ---
