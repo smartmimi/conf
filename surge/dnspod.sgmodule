@@ -1,0 +1,5 @@
+#!name=dnspod
+#!desc=腾讯公用基础doh
+
+[General]
+doh-server = https://doh.pub/dns-query
