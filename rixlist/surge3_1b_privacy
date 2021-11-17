@@ -8387,7 +8387,7 @@ DOMAIN,serve-prod1204.uberads.com
 DOMAIN,local-analytics.uberinternal.com
 DOMAIN,ubermedia.com
 DOMAIN,reports.ubimo.com
-DOMAIN,applog.uc.cn
+#DOMAIN,applog.uc.cn
 DOMAIN,gj.applog.uc.cn
 DOMAIN,gjapplog.uc.cn
 DOMAIN,mparticle.uc.cn
