@@ -530,6 +530,15 @@ DOMAIN,pingtcss.qq.com
 DOMAIN,splashqqlive.gtimg.com
 DOMAIN,tajs.qq.com
 DOMAIN,access-sngapm.qcloud.com
+DOMAIN,adstats.tencentmusic.com
+DOMAIN,ad.tencentmusic.comT
+DOMAIN,adcdn.tencentmusic.com
+DOMAIN,adexpo.tencentmusic.com
+DOMAIN,adclick.tencentmusic.com
+DOMAIN,p.l.qq.com
+DOMAIN,oth.bls.mdt.qq.com
+DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,sngdia.imtmp.net
 
 # >> TikTok (include China / Internation Version)
 DOMAIN,bds.snssdk.com
