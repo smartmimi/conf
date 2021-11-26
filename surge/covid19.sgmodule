@@ -6,4 +6,4 @@
 covid19 = script-name=covid19, title="新冠疫情查询", content="请刷新", update-interval=-1
 
 [Script]
-covid19 = type=generic, script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/covid19.js4
+covid19 = type=generic, script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/covid19.js
