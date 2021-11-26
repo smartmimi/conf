@@ -106,6 +106,25 @@
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/surge/sub_info_panel.js",
       "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"
+    },
+    {
+      "id": "covid1",
+      "name": "疫情查询区域",
+      "keys": [],
+      "settings": [
+        {
+          "id": "covid19area",
+          "name": "区域",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "["中国","北京","上海"]",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "按格式输入查询的区域"
+        }
+      ],
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
     }
   ]
 }
