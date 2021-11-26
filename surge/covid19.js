@@ -31,14 +31,14 @@ function num(location, result) {
   }
 };
 $httpClient.get(url, function(error, response, data){
-let res = data;
+  let res = data;
   for (var i = 0; i < list.length; i++) {
     num(list[i], res);
     if (i == list.length - 1) {
      $done({
        title: "疫情查询:新增 / 现存"+ "   "+nowtime(),
        icon : "staroflife",
-       content: ala
+       content: ala.replace(/\n$/, "")
      });
     }
   }
