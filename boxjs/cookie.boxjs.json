@@ -125,6 +125,8 @@
       ],
       "author": "@moi",
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/covid19.js",
+      "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"
     }
   ]
 }
