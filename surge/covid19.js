@@ -2,7 +2,7 @@ const read = $persistentStore.read("covid19area") ;
 var list = read.split(",");
 const url = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
 var ala="";
-if (!list){
+if (!read){
   $done({
    title: "新冠疫情查询",
    style: "error",
