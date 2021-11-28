@@ -17,7 +17,6 @@ function nowtime(){
 function num(location, result) {
   var loc = location;
   var resu = result;
-  //感谢狗哥@Neurogram提供的正则支持
   var loc_new = new RegExp(loc + "[\\s\\S]*?confirm[\\s\\S]{3}(\\d+)");
   var loc_now = new RegExp(loc + "[\\s\\S]*?nowConfirm[\\s\\S]{3}(\\d+)");
   let loc_new_res = loc_new.exec(resu);
