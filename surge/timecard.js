@@ -70,7 +70,7 @@ function datenotice() {
   }
 }
 $done({
-title:"距离节假日，还有摸鱼多少天？",
+title:"距离节假日，还要摸鱼多少天？",
 icon:"tortoise",
 content:tlist[nowlist][0]+"："+today(tnumcount(nowlist))+"天,"+tlist[Number(nowlist) + Number(1)][0] +"："+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+"："+tnumcount(Number(nowlist) + Number(2))+"天"
 })
