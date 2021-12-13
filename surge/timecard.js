@@ -64,13 +64,13 @@ function today(day) {
 function datenotice() {
   if ($persistentStore.read("timecardpushed") != tlist[nowlist][1] && tnow.getHours() >= 6) {
     $persistentStore.write(tlist[nowlist][1], "timecardpushed");
-    $notification.post("时间卡提醒","", "今天是" + tlist[nowlist][1] + "日 " + tlist[nowlist][0] + "   🎉")
+    $notification.post("假日祝福","", "今天是" + tlist[nowlist][1] + "日 " + tlist[nowlist][0] + "   🎉")
   } else if ($persistentStore.read("timecardpushed") == tlist[nowlist][1]) {
     //console.log("当日已通知");
   }
 }
 $done({
-title:"法定节假日，还有多少天？",
-icon:"calendar",
+title:"距离节假日，还有摸鱼多少天？",
+icon:"tortoise",
 content:tlist[nowlist][0]+"："+today(tnumcount(nowlist))+"天,"+tlist[Number(nowlist) + Number(1)][0] +"："+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+"："+tnumcount(Number(nowlist) + Number(2))+"天"
 })
