@@ -1,5 +1,5 @@
 var tlist = {
-  1:  ["测试","2021-12-13"],
+  1: ["测试", "2021-12-13"],
   2: ["元旦", "2022-01-01"],
   3: ["春节", "2022-02-01"],
   3: ["元宵", "2022-02-15"],
@@ -64,7 +64,7 @@ function datenotice() {
     $persistentStore.write(tlist[nowlist][1], "timecardpushed");
     $notification.post("时间卡提醒", "今天是" + tlist[nowlist][1] + "日 " + tlist[nowlist][0] + " 🎉")
   } else if ($persistentStore.read("timecardpushed") == tlist[nowlist][1]) {
-    console.log("当日已通知");
+    //console.log("当日已通知");
   }
 }
 $done({
