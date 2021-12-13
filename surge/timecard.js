@@ -64,7 +64,7 @@ function today(day) {
 function datenotice() {
   if ($persistentStore.read("timecardpushed") != tlist[nowlist][1] && tnow.getHours() >= 6) {
     $persistentStore.write(tlist[nowlist][1], "timecardpushed");
-    $notification.post("时间卡提醒","", "今天是" + tlist[nowlist][1] + "日 " + tlist[nowlist][0] + "🎉")
+    $notification.post("时间卡提醒","", "今天是" + tlist[nowlist][1] + "日 " + tlist[nowlist][0] + "   🎉")
   } else if ($persistentStore.read("timecardpushed") == tlist[nowlist][1]) {
     //console.log("当日已通知");
   }
@@ -72,5 +72,5 @@ function datenotice() {
 $done({
 title:"法定节假日，还有多少天？",
 icon:"calendar",
-content:tlist[nowlist][0]+"：     "+  today(tnumcount(nowlist))+"\n"+tlist[Number(nowlist) + Number(1)][0] +":     "+ tnumcount(Number(nowlist) + Number(1))+ "\n"+tlist[Number(nowlist) + Number(2)][0]+":     "+tnumcount(Number(nowlist) + Number(2))
+content:tlist[nowlist][0]+"：     "+today(tnumcount(nowlist))+"\n"+tlist[Number(nowlist) + Number(1)][0] +"：     "+ tnumcount(Number(nowlist) + Number(1))+ "\n"+tlist[Number(nowlist) + Number(2)][0]+"：     "+tnumcount(Number(nowlist) + Number(2))
 })
