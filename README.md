@@ -11,22 +11,19 @@
 
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/flushDNS.sgmodule
 
-## 2、netflix区域解锁检测
-
-https://raw.githubusercontent.com/smartmimi/conf/master/surge/nf_check.sgmodule
-
-## 3、机场流量信息
-
+## 32
 需搭配boxjs设置参数
 
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/sub_info_panel.sgmodule
 
-## 4、搬瓦工流量信息
+## 3、搬瓦工流量信息
 
 需搭配boxjs设置参数
 
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/bwg_data.sgmodule
 
-## 5、youtube解锁检测
+## 4、法定节假日panel
 
-https://raw.githubusercontent.com/smartmimi/conf/master/surge/ytb_check.sgmodule
+https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.sgmodule
+
+
