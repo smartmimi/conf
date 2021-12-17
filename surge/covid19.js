@@ -36,7 +36,7 @@ $httpClient.get(url, function(error, response, data){
     if (i == list.length - 1) {
      $done({
        title: "疫情查询:新增 / 现存"+ "   "+nowtime(),
-       icon : "staroflife",
+       icon : "heart.circle",
        content: ala.replace(/\n$/, "")
      });
     }
