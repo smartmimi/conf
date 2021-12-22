@@ -1,0 +1,9 @@
+#!name=nekoneko
+#!desc=nekoneko流量查询，搭配boxjs使用：https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/cookie.boxjs.json,输入key
+#!system=ios
+
+[Panel]
+nekoneko = script-name=nekoneko, title="NekoNeko流量", content="请刷新", update-interval=3600
+
+[Script]
+covid19 = type=generic, script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/nekoneko.js
