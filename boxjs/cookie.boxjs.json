@@ -127,6 +127,27 @@
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/surge/covid19.js",
       "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"
+    },
+    {
+      "id": "nekoneko",
+      "name": "nekoneko用量查询",
+      "keys": [],
+      "settings": [
+        {
+          "id": "nekoneko_key",
+          "name": "key",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "输入key"
+        }
+      ],
+      "author": "@moi",
+      "repo": "https://github.com/smartmimi/conf/master/boxjs",
+      "script": "https://github.com/smartmimi/conf/tree/master/surge/nekoneko.js",
+      "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"
     }
   ]
 }
