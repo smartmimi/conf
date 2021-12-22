@@ -40,13 +40,13 @@ function flow(dataflow) {
 function dict(status) {
   switch (status) {
     case 0:
-      return "删除中";
+      return "删除";
     case 1:
-      return "运行中";
+      return "运行";
     case 2:
-      return "更新中";
+      return "更新";
     case 3:
-      return "添加中";
+      return "添加";
     default:
       return "状态码错误";
   }
