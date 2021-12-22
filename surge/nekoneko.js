@@ -24,7 +24,7 @@ function api() {
       let name = res.data[i]["name"];
       let traffic = res.data[i]["traffic"];
       let status = res.data[i]["status"];
-      cont =cont + dict(status) + ":"  flow(traffic) + "G-->"+ name +  "\n";
+      cont =cont + dict(status) + ":" + flow(traffic) + "G-->"+ name +  "\n";
       //console.log(cont);
       if (i == res.data.length - 1) {
         push(cont);
