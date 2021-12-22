@@ -40,15 +40,15 @@ function flow(dataflow) {
 function dict(status) {
   switch (status) {
     case 0:
-      return "删除";
+      return "✖️";//删除中
     case 1:
-      return "运行";
+      return "⏭";//运行中
     case 2:
-      return "更新";
+      return "🔄";//更新中
     case 3:
-      return "添加";
+      return "⏏️";//添加中
     default:
-      return "状态码错误";
+      return "🔴";//状态码错误
   }
 }
 function push(mes) {
