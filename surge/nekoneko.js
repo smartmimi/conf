@@ -1,4 +1,4 @@
-在下一行内填写nekoneko的key，或者在boxjs内填写，以脚本内优先
+//在下一行内填写nekoneko的key，或者在boxjs内填写，以脚本内优先
 const nekoneko_key = '';
 //boxjs https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/cookie.boxjs.json
 const nekoneko_key_boxjs = $persistentStore.read("nekoneko_key");
