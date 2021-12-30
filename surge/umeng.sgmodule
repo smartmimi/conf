@@ -1,0 +1,8 @@
+#!name=umeng_reject_tinygif
+#!desc=对umeng全家桶进行mitm并reject_tinygif
+
+[Rule]
+RULE-SET,https://raw.githubusercontent.com/smartmimi/conf/master/rixlist/surge3_reject-tinygif,REJECT-TINYGIF
+
+[MITM]
+hostname = %APPEND% *.umeng.com, *.umengcloud.com,*.umeng.co, *.umengcloudlog.com
