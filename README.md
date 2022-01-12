@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/smartmimi/conf/master/surge/sub_info_panel.sgm
 
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/bwg_data.sgmodule
 
-## 4、法定节假日panel
+## 4、时间卡panel
 
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.sgmodule
 
