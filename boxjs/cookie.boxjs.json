@@ -34,7 +34,7 @@
       "author": "@moi",
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/surge/bwg_data.js",
-      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/caiji.png"]
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"]
     },
     {
       "id": "airport",
@@ -126,7 +126,7 @@
       "author": "@moi",
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/surge/covid19.js",
-      "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/health.png"]
     },
     {
       "id": "nekoneko",
@@ -147,7 +147,7 @@
       "author": "@moi",
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/surge/nekoneko.js",
-      "icon": "https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/bwg.jpg"
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/caiji.png"]
     }
   ]
 }
