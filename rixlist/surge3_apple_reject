@@ -1,5 +1,0 @@
-# 屏蔽苹果的无用链接，此列表需要放在surge3_apple_services前面。
-#https://support.apple.com/zh-cn/HT210060
-#已废弃，会影响appstore里apple相关app的下载
-DOMAIN,mesu.apple.com
-DOMAIN,xp.apple.com
