@@ -803,4 +803,18 @@ DOMAIN-SUFFIX,yihuifu.cn
 DOMAIN-SUFFIX,yuanchengxiezuo.com
 DOMAIN-SUFFIX,zbrushcn.com
 DOMAIN-SUFFIX,zhzzx.com
+# 20220225
+DOMAIN,118.89.204.198
+DOMAIN,api.cupid.dns.iqiyi.com
+DOMAIN,appcloud2.in.zhihu.com
+DOMAIN,video-ad.sm.cn
+IP-CIDR,118.89.204.198/32,no-resolve
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?
+URL-REGEX,^https?:\/\/api\.bilibili\.com\/x\/v2\/dm\/ad
+URL-REGEX,^https?:\/\/api\.zhihu\.com\/brand\/question\/\d+/card\?
+URL-REGEX,^https?:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v4\/answers\/\d+\/recommendations
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v\d+\/brand\/question/\d+/card\?
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/appview\/(p|v2\/answer|zvideo)\/.*entry=(preload-topstory|preload-search|preload-subscription)
+USER-AGENT,AVOS*,REJECT
 # --- End of Blacklist Section
