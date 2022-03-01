@@ -28,9 +28,10 @@ Sub_info = script-name=Sub_info
   let usage = await getDataUsage(urlcode);
   let used = usage.download + usage.upload;
   let total = usage.total;
-  let prec = precent(used,total);
   let expire = usage.expire || $persistentStore.read("airport_expire");
-  let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n${prec}`];
+  //let prec = precent(used,total);
+  //let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n${prec}`];
+  let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n`];
 
   if (resetLeft) {
     infoList.push(`重置：剩余${resetLeft}天`);
