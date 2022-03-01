@@ -31,7 +31,7 @@ Sub_info = script-name=Sub_info
   let expire = usage.expire || $persistentStore.read("airport_expire");
   //let prec = precent(used,total);
   //let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n${prec}`];
-  let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}\n`];
+  let infoList = [`使用：${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   if (resetLeft) {
     infoList.push(`重置：剩余${resetLeft}天`);
