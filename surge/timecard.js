@@ -69,8 +69,17 @@ function datenotice() {
     //console.log("当日已通知");
   }
 }
+
+function icon_now(num){
+  if(num<=7){
+    return "hare"
+  }else{
+  return "tortoise"
+  }
+}
+
 $done({
 title:"距离节假日，还要摸鱼多少天？",
-icon:"tortoise",
+icon:icon_now(today(tnumcount(nowlist))),
 content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+"天,"+tlist[Number(nowlist) + Number(1)][0] +":"+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+":"+tnumcount(Number(nowlist) + Number(2))+"天"
 })
