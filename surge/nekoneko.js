@@ -54,7 +54,7 @@ function dict(status) {
 function push(mes) {
 $done({
 title:"Nekoneko流量",
-icon:"hare",
+icon:"forward",
 content:mes.replace(/\n$/, "")
 })
 }
