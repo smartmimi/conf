@@ -1,0 +1,5 @@
+#!name=MitM All Hostnames
+#!desc=MitM所有域名（除Apple等部分域名外）用于开启抓包分析数据.
+
+[MITM]
+hostname = -*.apple.com, -*.icloud.com, -*.mzstatic.com, -*.crashlytics.com, -*.facebook.com, -*.instagram.com, *
