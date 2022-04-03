@@ -83,12 +83,12 @@ function icon_now(num){
 }
 
 $done({
-title:title_random(),
+title:title_random(tnumcount(Number(nowlist))),
 icon:icon_now(tnumcount(Number(nowlist))),
 content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+"天,"+tlist[Number(nowlist) + Number(1)][0] +":"+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+":"+tnumcount(Number(nowlist) + Number(2))+"天"
 })
 
-function title_random(){
+function title_random(num){
   let r = Math.floor((Math.random()*10)+1);
   let dic = {
     1:"距离节假日，还要摸鱼多少天？",
@@ -101,6 +101,6 @@ function title_random(){
     8:"一起摸鱼吧",
     9:"加油，这样老板就能换新车了",
     10: "小乌龟慢慢爬"
-  }
-  return dic[r]
+  };
+  return num==1?"过节啦！":dic[r]
 }
