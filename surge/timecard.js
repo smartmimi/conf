@@ -102,5 +102,5 @@ function title_random(num){
     9:"加油，这样老板就能换新车了",
     10: "小乌龟慢慢爬"
   };
-  return num==1?"过节啦！":dic[r]
+  return num==0?"过节啦！":dic[r]
 }
