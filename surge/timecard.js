@@ -73,7 +73,7 @@ function datenotice() {
 function icon_now(num){
   if(num<=7 && num>3 ){
     return "hare"
-  }else if(num<=3 && num>=0){
+  }else if(num<=3 && num>0){
     return "timer"
   }else if(num==0){
     return "gift"
