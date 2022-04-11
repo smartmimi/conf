@@ -69,7 +69,8 @@ function datenotice() {
     //console.log("当日已通知");
   }
 }
-//7天以上乌龟，3天以上兔子，3天以内闪电
+
+//>图标依次切换乌龟、兔子、闹钟、礼品盒
 function icon_now(num){
   if(num<=7 && num>3 ){
     return "hare"
@@ -91,16 +92,16 @@ content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+"天,"+tlist[Number(nowl
 function title_random(num){
   let r = Math.floor((Math.random()*10)+1);
   let dic = {
-    1:"距离节假日，还要摸鱼多少天？",
+    1:"距离放假，还要摸鱼多少天？",
     2:"坚持住，就快放假啦！",
     3:"上班好累呀，好想放假",
     4:"努力，我还能加班24小时！",
-    5:"天呐，要放假啦？",
+    5:"天呐，还要多久才放假呀？",
     6:"躺平中，等放假",
     7:"只有摸鱼才是赚老板的钱",
     8:"一起摸鱼吧",
-    9:"加油，这样老板就能换新车了",
+    9:"摸鱼中，期待下一个假日",
     10: "小乌龟慢慢爬"
   };
-  return num==0?"过节啦！":dic[r]
+  return num==0?"节日快乐，万事大吉":dic[r]
 }
