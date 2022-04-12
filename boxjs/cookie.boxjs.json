@@ -156,7 +156,7 @@
       "settings": [
         {
           "id": "nweekly_notes_title",
-          "name": "key",
+          "name": "标题",
           "val": "",
           "type": "textarea",
           "placeholder": "",
@@ -166,7 +166,7 @@
         },
                 {
           "id": "weekly_notes_1",
-          "name": "key",
+          "name": "周一",
           "val": "",
           "type": "textarea",
           "placeholder": "",
@@ -176,7 +176,7 @@
         },
                 {
           "id": "weekly_notes_2",
-          "name": "key",
+          "name": "周二",
           "val": "",
           "type": "textarea",
           "placeholder": "",
@@ -186,7 +186,7 @@
         },
                 {
           "id": "weekly_notes_3",
-          "name": "key",
+          "name": "周三",
           "val": "",
           "type": "textarea",
           "placeholder": "",
@@ -196,7 +196,7 @@
         },
                 {
           "id": "weekly_notes_4",
-          "name": "key",
+          "name": "周四",
           "val": "",
           "type": "textarea",
           "placeholder": "",
@@ -206,7 +206,7 @@
         },
                 {
           "id": "weekly_notes_5",
-          "name": "key",
+          "name": "周五",
           "val": "",
           "type": "textarea",
           "placeholder": "",
@@ -216,7 +216,7 @@
         },
                 {
           "id": "weekly_notes_6",
-          "name": "key",
+          "name": "周六",
           "val": "",
           "type": "textarea",
           "placeholder": "",
@@ -226,7 +226,7 @@
         },
                 {
           "id": "weekly_notes_0",
-          "name": "key",
+          "name": "周日",
           "val": "",
           "type": "textarea",
           "placeholder": "",
@@ -238,7 +238,7 @@
       "author": "@moi",
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/surge/nekoneko.js",
-      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/neko.png","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/neko.png"]
+      "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/weekly_notes.jpg","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/weekly_notes.jpg"]
     }
   ]
 }
