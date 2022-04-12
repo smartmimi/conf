@@ -157,7 +157,7 @@
         {
           "id": "weekly_notes_title",
           "name": "信息标题",
-          "val": "",
+          "val": "每周信息展示",
           "type": "textarea",
           "placeholder": "",
           "autoGrow": true,
@@ -167,7 +167,7 @@
                 {
           "id": "weekly_notes_1",
           "name": "周一",
-          "val": "",
+          "val": "未填写数据",
           "type": "textarea",
           "placeholder": "",
           "autoGrow": true,
@@ -177,7 +177,7 @@
                 {
           "id": "weekly_notes_2",
           "name": "周二",
-          "val": "",
+          "val": "未填写数据",
           "type": "textarea",
           "placeholder": "",
           "autoGrow": true,
@@ -187,7 +187,7 @@
                 {
           "id": "weekly_notes_3",
           "name": "周三",
-          "val": "",
+          "val": "未填写数据",
           "type": "textarea",
           "placeholder": "",
           "autoGrow": true,
@@ -197,7 +197,7 @@
                 {
           "id": "weekly_notes_4",
           "name": "周四",
-          "val": "",
+          "val": "未填写数据",
           "type": "textarea",
           "placeholder": "",
           "autoGrow": true,
@@ -207,7 +207,7 @@
                 {
           "id": "weekly_notes_5",
           "name": "周五",
-          "val": "",
+          "val": "未填写数据",
           "type": "textarea",
           "placeholder": "",
           "autoGrow": true,
@@ -217,7 +217,7 @@
                 {
           "id": "weekly_notes_6",
           "name": "周六",
-          "val": "",
+          "val": "未填写数据",
           "type": "textarea",
           "placeholder": "",
           "autoGrow": true,
@@ -227,7 +227,7 @@
                 {
           "id": "weekly_notes_0",
           "name": "周日",
-          "val": "",
+          "val": "未填写数据",
           "type": "textarea",
           "placeholder": "",
           "autoGrow": true,
