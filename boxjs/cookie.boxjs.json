@@ -155,8 +155,8 @@
       "keys": [],
       "settings": [
         {
-          "id": "nweekly_notes_title",
-          "name": "标题",
+          "id": "weekly_notes_title",
+          "name": "信息标题",
           "val": "",
           "type": "textarea",
           "placeholder": "",
