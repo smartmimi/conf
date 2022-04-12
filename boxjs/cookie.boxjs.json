@@ -148,7 +148,7 @@
       "repo": "https://github.com/smartmimi/conf/master/boxjs",
       "script": "https://github.com/smartmimi/conf/tree/master/surge/nekoneko.js",
       "icons": ["https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/neko.png","https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/neko.png"]
-    }
+    },
     {
       "id": "weekly_note",
       "name": "每周信息展示",
