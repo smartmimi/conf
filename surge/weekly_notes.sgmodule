@@ -1,0 +1,9 @@
+#!name=weekly_notes
+#!desc=每周循环信息展示，搭配boxjs使用：https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/cookie.boxjs.json,输入key
+#!system=ios
+
+[Panel]
+weekly_notes = script-name=weekly_notes, title="每周循环信息展示", content="请刷新", update-interval=3600
+
+[Script]
+weekly_notes = type=generic, script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/weekly_notes.js
