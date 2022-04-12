@@ -11,6 +11,6 @@ var tnow = new Date();
 var tnoww = tnow.getDay();
 $done({
 title:"周"+`${tnoww==0?"日":tnoww}`+"信息提醒",
-icon:greetingcard,
+icon:"greetingcard",
 content:tlist[tnow]
 })
