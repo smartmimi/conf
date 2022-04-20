@@ -26,7 +26,7 @@ function num(location, result) {
   let loc_wzz_res = loc_wzz.exec(resu);
   if (loc_new_res) {
     //console.log("已获取" + loc + "的信息");
-    ala = ala +loc +"   : " +equalWidth(loc_new_res[1])+equalWidth(loc_now_res[1])+equalWidth(loc_wzz_res[1])+"\n";
+    ala = ala +loc +"   : " +ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"|"+ToDBC(loc_wzz_res[1].padStart(6," "))+"\n";
   } else {
     //console.log("获取" + loc + "的信息失败");
     ala = ala + loc + "   :   查无数据\n";
@@ -45,34 +45,15 @@ $httpClient.get(url, function(error, response, data){
     }
   }
 });
-
-//数字的字符宽度。（iOS默认17号的情况下，0为10又1/3，以下为方便计算，以3倍计算）
-//空格字符宽度，预估为13.2
-const dictWidth = {
-  0: 31,
-  1: 22,
-  2: 30,
-  3: 31,
-  4: 32,
-  5: 31,
-  6: 32,
-  7: 28,
-  8: 32,
-  9: 32
-};
-//将输入的数字字符串，输出为等宽的字符串，前端用空格补齐
-function equalWidth(str) {
-  let unmWidth = 0;
-  //获取字符串宽度
-  function getWidth() {
-    for (var i = 0; i < str.length; i++) {
-      unmWidth += dictWidth[str[i]];
-      if (i == str.length - 1) {
-        return Number(unmWidth);
-      }
+function ToDBC(txtstring) {
+    var tmp = "";
+    for (var i = 0; i < txtstring.length; i++) {
+        if (txtstring.charCodeAt(i) == 32) {
+            tmp = tmp + String.fromCharCode(12288);
+        }
+        else if (txtstring.charCodeAt(i) < 127) {
+            tmp = tmp + String.fromCharCode(txtstring.charCodeAt(i) + 65248);
+        }
     }
-  };
-  //输出总字符串长度=补齐字符串的宽度所需的空格数目+字符串原长度
-  let totalLength = Number((((200 - getWidth())*10)/132).toFixed(0))+Number(str.length);
-  return str.padStart(totalLength," ");
+    return tmp;
 }
