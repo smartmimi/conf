@@ -26,7 +26,8 @@ function num(location, result) {
   let loc_wzz_res = loc_wzz.exec(resu);
   if (loc_new_res) {
     //console.log("已获取" + loc + "的信息");
-    ala = ala +loc +ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"|"+ToDBC(loc_wzz_res[1].padStart(6," "))+"\n";
+    ala = ala +loc +ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"\n";
+      // 无症状+"|"+ToDBC(loc_wzz_res[1].padStart(6," "));
   } else {
     //console.log("获取" + loc + "的信息失败");
     ala = ala + loc + "   :   查无数据\n";
@@ -38,7 +39,7 @@ $httpClient.get(url, function(error, response, data){
     num(list[i], res);
     if (i == list.length - 1) {
      $done({
-       title: "疫情查询:新增 | 现存 | 无症状"+ "   "+nowtime(),
+       title: "疫情查询:新增 | 现存"+ "   "+nowtime(),
        icon : "heart.circle",
        content: ala.replace(/\n$/, "")
      });
