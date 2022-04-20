@@ -26,7 +26,7 @@ function num(location, result) {
   let loc_wzz_res = loc_wzz.exec(resu);
   if (loc_new_res) {
     //console.log("已获取" + loc + "的信息");
-    ala = ala +loc +"   :   " +loc_new_res[1].padStart(5,"\u0020")+"｜"+loc_now_res[1].padStart(6,"\u0020")+"｜"+loc_wzz_res[1].padStart(6,"\u0020")+"\n";
+    ala = ala +loc +"   : " +equalWidth(loc_new_res[1])+equalWidth(loc_now_res[1])+equalWidth(loc_wzz_res[1])+"\n";
   } else {
     //console.log("获取" + loc + "的信息失败");
     ala = ala + loc + "   :   查无数据\n";
@@ -45,3 +45,30 @@ $httpClient.get(url, function(error, response, data){
     }
   }
 });
+const dictWidth = {
+  0: 31,
+  1: 22,
+  2: 30,
+  3: 31,
+  4: 32,
+  5: 31,
+  6: 32,
+  7: 28,
+  8: 32,
+  9: 32
+};
+function equalWidth(str) {
+  let unmWidth = 0;
+  function getWidth() {
+    for (var i = 0; i < str.length; i++) {
+      unmWidth += dictWidth[str[i]];
+      if (i == str.length - 1) {
+        //console.log(unmWidth);
+        return Number(unmWidth);
+      }
+    }
+  };
+  let totalWidth = Number((((200 - getWidth())*10)/132).toFixed(0))+Number(str.length);
+  //console.log(str.padStart(totalWidth," "));
+  return str.padStart(totalWidth," ");
+}
