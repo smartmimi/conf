@@ -45,6 +45,9 @@ $httpClient.get(url, function(error, response, data){
     }
   }
 });
+
+//数字的字符宽度。（iOS默认17号的情况下，0为10又1/3，以下为方便计算，以3倍计算）
+//空格字符宽度，预估为13.2
 const dictWidth = {
   0: 31,
   1: 22,
@@ -57,18 +60,19 @@ const dictWidth = {
   8: 32,
   9: 32
 };
+//将输入的数字字符串，输出为等宽的字符串，前端用空格补齐
 function equalWidth(str) {
   let unmWidth = 0;
+  //获取字符串宽度
   function getWidth() {
     for (var i = 0; i < str.length; i++) {
       unmWidth += dictWidth[str[i]];
       if (i == str.length - 1) {
-        //console.log(unmWidth);
         return Number(unmWidth);
       }
     }
   };
-  let totalWidth = Number((((200 - getWidth())*10)/132).toFixed(0))+Number(str.length);
-  //console.log(str.padStart(totalWidth," "));
-  return str.padStart(totalWidth," ");
+  //输出总字符串长度=补齐字符串的宽度所需的空格数目+字符串原长度
+  let totalLength = Number((((200 - getWidth())*10)/132).toFixed(0))+Number(str.length);
+  return str.padStart(totalLength," ");
 }
