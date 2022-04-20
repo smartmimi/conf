@@ -30,7 +30,7 @@ function num(location, result) {
       // 无症状+"|"+ToDBC(loc_wzz_res[1].padStart(6," "));
   } else {
     //console.log("获取" + loc + "的信息失败");
-    ala = ala + loc + "   :   查无数据\n";
+    ala = ala + loc + ":   查无数据\n";
   }
 };
 $httpClient.get(url, function(error, response, data){
@@ -39,7 +39,7 @@ $httpClient.get(url, function(error, response, data){
     num(list[i], res);
     if (i == list.length - 1) {
      $done({
-       title: "疫情查询：　新增 | 现存"+ "   "+nowtime(),
+       title: "疫情查询:"+ToDBC(" ")+"新增 | 现存"+ "   "+nowtime(),
        icon : "heart.circle",
        content: ala.replace(/\n$/, "")
      });
