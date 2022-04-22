@@ -11,8 +11,11 @@ if (!read){
 };
 function nowtime(){
  let now = new Date();
- let time = now.getHours()+":"+now.getMinutes();
- // +":"+now.getSeconds();
+ let hour = now.getHours();
+ let minutes = now.getMinutes();
+ let hour_twoCode = hour > 9 ? hour : "0" + hour;
+ let minutes_twoCode = minutes > 9 ? minutes : "0" + minutes;
+ let time = hour_twoCode+":"+minutes_twoCode;
  return time
 }
 function num(location, result) {
@@ -39,7 +42,7 @@ $httpClient.get(url, function(error, response, data){
     num(list[i], res);
     if (i == list.length - 1) {
      $done({
-       title: "疫情查询:"+ToDBC(" ")+"新增|现存"+ToDBC("  ")+nowtime(),
+       title: "疫情查询:"+ToDBC(" ")+"新增|现存"+ToDBC(" ")+nowtime(),
        icon : "heart.circle",
        content: ala.replace(/\n$/, "")
      });
