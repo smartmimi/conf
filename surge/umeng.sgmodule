@@ -1,4 +1,4 @@
-#!name=umeng_reject_tinygif
+#!name=umeng拦截
 #!desc=对umeng全家桶进行mitm并reject_tinygif
 
 [Rule]
