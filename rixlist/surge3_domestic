@@ -412,4 +412,7 @@ DOMAIN-SUFFIX,m3u8.apibdzy.com
 # >> ftx
 DOMAIN-SUFFIX,colorlessgreenumbralla.com
 
+# >> weibo
+DOMAIN-KEYWORD,weibo
+
 # --- End of Mainland China Available Section ---
