@@ -24,12 +24,14 @@ function num(location, result) {
   var loc_new = new RegExp(loc + "[\\s\\S]*?confirm[\\s\\S]{3}(\\d+)");
   var loc_now = new RegExp(loc + "[\\s\\S]*?nowConfirm[\\s\\S]{3}(\\d+)");
   var loc_wzz = new RegExp(loc + "[\\s\\S]*?wzz[\\s\\S]{3}(\\d+)");
+  var loc_update = new RegExp(loc + "[\\s\\S]*?isUpdated[\\s\\S]{3}(\\b(true|false)\\b)");
   let loc_new_res = loc_new.exec(resu);
   let loc_now_res = loc_now.exec(resu);
   let loc_wzz_res = loc_wzz.exec(resu);
+  let loc_update_res = loc_update.exec(resu);
   if (loc_new_res) {
     //console.log("已获取" + loc + "的信息");
-    ala = ala +loc +":"+ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"\n";
+    ala = ala +loc +update_icon(loc_update_res[1])+":"+ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"\n";
       // 无症状+"|"+ToDBC(loc_wzz_res[1].padStart(6," "));
   } else {
     //console.log("获取" + loc + "的信息失败");
@@ -61,3 +63,13 @@ function ToDBC(txtstring) {
     }
     return tmp;
 }
+function update_icon(status){
+if(status== "true"){
+return '\u2714';
+} else if(status== "false"){
+return '\u3030';
+}else{
+return '\u2716';
+}
+}
+
