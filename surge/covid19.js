@@ -31,7 +31,7 @@ function num(location, result) {
   let loc_update_res = loc_update.exec(resu);
   if (loc_new_res) {
     //console.log("已获取" + loc + "的信息");
-    ala = ala +loc +update_icon(loc_update_res[1])+":"+ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"\n";
+    ala = ala +loc +update_icon(loc_update_res[1])+ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"\n";
       // 无症状+"|"+ToDBC(loc_wzz_res[1].padStart(6," "));
   } else {
     //console.log("获取" + loc + "的信息失败");
@@ -44,7 +44,7 @@ $httpClient.get(url, function(error, response, data){
     num(list[i], res);
     if (i == list.length - 1) {
      $done({
-       title: "疫情查询:"+ToDBC(" ")+"新增|现存"+ToDBC(" ")+nowtime(),
+       title: "疫情查询"+ToDBC("  ")+"新增|现存"+ToDBC(" ")+nowtime(),
        icon : "heart.circle",
        content: ala.replace(/\n$/, "")
      });
@@ -64,12 +64,11 @@ function ToDBC(txtstring) {
     return tmp;
 }
 function update_icon(status){
-if(status== "true"){
-return '\u2714';
-} else if(status== "false"){
-return '\u3030';
-}else{
-return '\u2716';
+  if(status== "true"){
+    return '\u2714';
+  } else if(status== "false"){
+      return '\u3030';
+    } else{
+      return '\u2716';
+     }
 }
-}
-
