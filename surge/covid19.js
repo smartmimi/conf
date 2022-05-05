@@ -31,7 +31,7 @@ function num(location, result) {
   let loc_update_res = loc_update.exec(resu);
   if (loc_new_res) {
     //console.log("已获取" + loc + "的信息");
-    ala = ala +loc +update_icon(loc_update_res[1])+ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"\n";
+    ala = ala+update_icon(loc_update_res[1])+loc+ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"\n";
       // 无症状+"|"+ToDBC(loc_wzz_res[1].padStart(6," "));
   } else {
     //console.log("获取" + loc + "的信息失败");
