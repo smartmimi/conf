@@ -3,7 +3,7 @@
 #!system=ios
 
 [Panel]
-functionstatus = script-name=functionstatus, title="状态显示", content="请刷新", update-interval=3600
+functionstatus = script-name=functionstatus, title="状态显示", content="请刷新", update-interval=60
 
 [Script]
 functionstatus = type=generic, script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/functionstatus.js
