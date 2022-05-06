@@ -1,4 +1,4 @@
-#代码借鉴 https://raw.githubusercontent.com/chaizia/Profiles/master/MySurge/surgepro_flushdns.js
+//代码借鉴 https://raw.githubusercontent.com/chaizia/Profiles/master/MySurge/surgepro_flushdns.js
 !(async () => {
 let traffic = (await httpAPI("/v1/traffic","GET"));
 let dateNow = new Date();
