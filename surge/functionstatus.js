@@ -1,10 +1,4 @@
-function httpAPI(path = "", method = "POST", body = null) {
-    return new Promise((resolve) => {
-        $httpAPI(method, path, body, (result) => {
-            resolve(result);
-        });
-    });
-}
+#代码借鉴 https://raw.githubusercontent.com/chaizia/Profiles/master/MySurge/surgepro_flushdns.js
 !(async () => {
 let traffic = (await httpAPI("/v1/traffic","GET"));
 let dateNow = new Date();
@@ -41,15 +35,19 @@ let leave3=leave2%(60*1000)      //计算分钟数后剩余的毫秒数
 let seconds=Math.round(leave3/1000)
 
 if(days==0){
-
-	if(hours==0){
-	if(minutes==0)return(`${seconds}秒`);
-	return(`${minutes}分${seconds}秒`)
+  if(hours==0){
+    if(minutes==0)return(`${seconds}秒`);
+      return(`${minutes}分${seconds}秒`)
+    }
+    return(`${hours}时${minutes}分${seconds}秒`)
+  }else {
+        return(`${days}天${hours}时${minutes}分`)
 	}
-	return(`${hours}时${minutes}分${seconds}秒`)
-	}else {
-	return(`${days}天${hours}时${minutes}分`)
-	}
-
 }
-
+function httpAPI(path = "", method = "POST", body = null) {
+  return new Promise((resolve) => {
+    $httpAPI(method, path, body, (result) => {
+      resolve(result);
+    });
+  });
+}
