@@ -7,6 +7,7 @@ let startTime = timeTransform(dateNow,dateTime);
 let mitm_status = (await httpAPI("/v1/features/mitm","GET"));
 let rewrite_status = (await httpAPI("/v1/features/rewrite","GET"));
 let scripting_status = (await httpAPI("/v1/features/scripting","GET"));
+let icon_s = mitm_status.enabled&&rewrite_status.enabled&&scripting_status.enabled;
 //点击按钮，刷新dns
 //if ($trigger == "button") await httpAPI("/v1/dns/flush");
 //点击按钮，重载配置（同时刷新dns）
@@ -17,8 +18,8 @@ if ($trigger == "button") {
 $done({
     title:"Surge  已运行"+startTime,
     content:"Mitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
-    icon: "gearshape",
-   // "icon-color":params.color
+    icon: icon_s?"checkmark.seal":"exclamationmark.triangle",
+   "icon-color":icon_s?"#16A951":"#FAFF72"
 });
 })();
 function icon_status(status){
