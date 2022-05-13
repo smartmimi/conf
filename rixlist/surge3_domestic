@@ -206,6 +206,8 @@ DOMAIN-SUFFIX,sina.com
 DOMAIN-SUFFIX,weibo.cn
 DOMAIN-SUFFIX,weibo.com
 DOMAIN-SUFFIX,weibocdn.com
+URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/statuses\/send\?
+URL-REGEX,^https?:\/\/api\.weibo\.cn\/2\/comments\/create\?
 
 # >> Sohu
 DOMAIN-SUFFIX,itc.cn
