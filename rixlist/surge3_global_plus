@@ -58,7 +58,7 @@ DOMAIN-SUFFIX,bandwagonhost.com,force-remote-dns
 DOMAIN-SUFFIX,bbc.com,force-remote-dns
 DOMAIN-SUFFIX,behance.net,force-remote-dns
 DOMAIN-SUFFIX,bibox.com,force-remote-dns
-DOMAIN-SUFFIX,binance.com,force-remote-dns
+#DOMAIN-SUFFIX,binance.com,force-remote-dns
 DOMAIN-SUFFIX,bitfinex.com,force-remote-dns
 DOMAIN-SUFFIX,booklive.jp,force-remote-dns
 DOMAIN-SUFFIX,bwh1.net,force-remote-dns
