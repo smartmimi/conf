@@ -289,6 +289,8 @@ panel_result['content'] = content
                 location: { countryCode },
               },
             } = data?.extensions?.sdk
+            //如果是台湾地区，则将TW转换为CN，避免国行手机获取不到emoj
+            countryCode=(countryCode=="TW")?"CN":countryCode
             resolve({ inSupportedLocation, countryCode, accessToken })
           })
         })
