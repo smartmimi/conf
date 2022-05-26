@@ -4,3 +4,5 @@ DOMAIN-SUFFIX,binance.me,force-remote-dns
 DOMAIN-SUFFIX,binance.cloud,force-remote-dns
 DOMAIN-SUFFIX,binance.im,force-remote-dns
 DOMAIN-SUFFIX,binancefuture.com,force-remote-dns
+DOMAIN-SUFFIX,dutils.com,force-remote-dns
+DOMAIN-SUFFIX,okx.com,force-remote-dns
