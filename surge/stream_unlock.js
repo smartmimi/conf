@@ -16,14 +16,18 @@ const STATUS_TIMEOUT = -1
 const STATUS_ERROR = -2
 
 function getFlagEmoji(code) {
-  const codePoints = code
+  //转换tw为cn，避免国行获取不到emoj
+  let code_change =(code=="TW"||code=="tw")?"CN":code;
+  const codePoints = code_change
      .toUpperCase()
     .split('')
     .map((char) => 127397 + char.charCodeAt());
   return String.fromCodePoint(...codePoints);
 }
 function getFlagEmoji(region) {
-  const codePoints = region
+  //转换tw为cn，避免国行获取不到emoj
+  let region_change =(region=="TW"||region=="tw")?"CN":region;
+  const codePoints = region_change
      .toUpperCase()
     .split('')
     .map((char) => 127397 + char.charCodeAt());
