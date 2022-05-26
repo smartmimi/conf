@@ -40,6 +40,8 @@ DOMAIN-SUFFIX,bitvk.com,force-remote-dns
 DOMAIN-SUFFIX,bitderiv.com,force-remote-dns
 DOMAIN-SUFFIX,hbabit.com,force-remote-dns
 DOMAIN-SUFFIX,pexpay.com,force-remote-dns
+DOMAIN-SUFFIX,thepinet.com,force-remote-dns
+DOMAIN-SUFFIX,pionex.com,force-remote-dns
 
 # Defi
 DOMAIN-SUFFIX,mdex.com,force-remote-dns
