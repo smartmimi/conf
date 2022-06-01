@@ -19,8 +19,6 @@ https://raw.githubusercontent.com/smartmimi/conf/master/surge/bwg_data.sgmodule
 
 https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.sgmodule
 
-## 5、每周循环信息展示
+## 5、显示卡片开关，用于隐藏卡片时查看开启状态
 
-在boxjs中填写信息，在panel种显示当天的信息
-
-https://raw.githubusercontent.com/smartmimi/conf/master/surge/weekly_notes.sgmodule
+https://raw.githubusercontent.com/smartmimi/conf/master/surge/functionstatus.sgmodule
