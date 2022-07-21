@@ -3,7 +3,7 @@
 
 [General]
 compatibility-mode = 3
-force-http-engine-hosts = %APPEND% -<ip-address>
+force-http-engine-hosts = %APPEND% -<ip-address>,*
 
 [MITM]
 tcp-connection = true
