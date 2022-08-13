@@ -19,12 +19,12 @@ const request = {
     headers: headers,
 };
 
-function yiqing() {
+async function yiqing() {
 $httpClient.get(request, function(error, response, data) {
-const res = JSON.parse(data);
+  const res = JSON.parse(data);
   const arrres = getArrFromObj(res);
   $done({
-    title: "疫情查询:当前确诊   更新于：" + res["country"]["time"].slice(5),
+    title: "疫情查询:当前确诊 " + res["country"]["time"].slice(5),
     body: getR(arrres).replace(/ $/, "")
   });
 });
