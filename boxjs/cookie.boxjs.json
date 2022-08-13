@@ -121,6 +121,16 @@
           "autoGrow": true,
           "rows": 1,
           "desc": "按格式输入查询的区域"
+        },
+        {
+          "id": "alihealthkey",
+          "name": "阿里健康api key",
+          "val": "",
+          "type": "textarea",
+          "placeholder": "",
+          "autoGrow": true,
+          "rows": 1,
+          "desc": "请在脚本说明里按提示获取key并填写"
         }
       ],
       "author": "@moi",
