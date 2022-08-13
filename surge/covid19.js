@@ -1,3 +1,6 @@
+//请从 https://market.aliyun.com/products/57002003/cmapi00037970.html#sku=yuncode3197000001 获取 AppCode （免费），
+//在Boxjs里填写查询地区及AppCode https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/cookie.boxjs.json
+//地区填写标准。省、直辖市，请填写全程“河北省”“北京市”。其他城市填写名字即可，“济南”“石家庄”
 const boxjsarea = $persistentStore.read("covid19area") ;
 const key = $persistentStore.read("alihealthkey") ;
 var area = boxjsarea.split(",");
