@@ -25,7 +25,8 @@ async function yiqing() {
   let getrr = await getR(arrres);
   $done({
     title: "疫情:确诊 " + res["country"]["time"].slice(5),
-    body: getrr.replace(/ $/, "")
+    icon: "heart.circle",
+    content: getrr.replace(/ $/, "")
   });
 }
 
