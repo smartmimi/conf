@@ -1,5 +1,5 @@
-#!name=covid19(接口数据不全，不建议使用2022/05/28)
-#!desc=新冠疫情查询，搭配boxjs使用：https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/cookie.boxjs.json,输入例如：中国,北京,上海 注意英文逗号
+#!name=covid19(
+#!desc=新冠疫情查询，搭配boxjs使用，使用阿里健康的api（需自行获取）。地区名称填写标准及api请参照脚本内说明
 #!system=ios
 
 [Panel]
