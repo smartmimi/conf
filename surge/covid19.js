@@ -1,74 +1,74 @@
-const read = $persistentStore.read("covid19area") ;
-var list = read.split(",");
-const url = "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5";
-var ala="";
-if (!read){
+const boxjsarea = $persistentStore.read("covid19area") ;
+const key = $persistentStore.read("alihealthkey") ;
+var area = boxjsarea.split(",");
+if (!boxjsarea){
   $done({
    title: "新冠疫情查询",
    style: "error",
    content: "请在boxjs中完善信息"
   })
 };
-function nowtime(){
- let now = new Date();
- let hour = now.getHours();
- let minutes = now.getMinutes();
- let hour_twoCode = hour > 9 ? hour : "0" + hour;
- let minutes_twoCode = minutes > 9 ? minutes : "0" + minutes;
- let time = hour_twoCode+":"+minutes_twoCode;
- return time
-}
-function num(location, result) {
-  var loc = location;
-  var resu = result;
-  var loc_new = new RegExp(loc + "[\\s\\S]*?confirm[\\s\\S]{3}(\\d+)");
-  var loc_now = new RegExp(loc + "[\\s\\S]*?nowConfirm[\\s\\S]{3}(\\d+)");
-  var loc_wzz = new RegExp(loc + "[\\s\\S]*?wzz[\\s\\S]{3}(\\d+)");
-  var loc_update = new RegExp(loc + "[\\s\\S]*?isUpdated[\\s\\S]{3}(\\b(true|false)\\b)");
-  let loc_new_res = loc_new.exec(resu);
-  let loc_now_res = loc_now.exec(resu);
-  let loc_wzz_res = loc_wzz.exec(resu);
-  let loc_update_res = loc_update.exec(resu);
-  if (loc_new_res) {
-    //console.log("已获取" + loc + "的信息");
-    ala = ala+update_icon(loc_update_res[1])+loc+ToDBC(loc_new_res[1].padStart(5," "))+"|"+ToDBC(loc_now_res[1].padStart(6," "))+"\n";
-      // 无症状+"|"+ToDBC(loc_wzz_res[1].padStart(6," "));
-  } else {
-    //console.log("获取" + loc + "的信息失败");
-    ala = ala + loc + ":   查无数据\n";
-  }
+const headers = {"Authorization" : "APPCODE "+key};
+const url = "https://ncovdata.market.alicloudapi.com/ncov/cityDiseaseInfoWithTrend";
+let ala ="";
+const request = {
+    url: url,
+    headers: headers,
 };
-$httpClient.get(url, function(error, response, data){
-  let res = data;
-  for (var i = 0; i < list.length; i++) {
-    num(list[i], res);
-    if (i == list.length - 1) {
-     $done({
-       title: "疫情查询:"+ToDBC("  ")+"新增|现存"+ToDBC("  ")+nowtime(),
-       icon : "heart.circle",
-       content: ala.replace(/\n$/, "")
-     });
+
+function yiqing() {
+$httpClient.get(request, function(error, response, data) {
+const res = JSON.parse(data);
+  const arrres = getArrFromObj(res);
+  $done({
+    title: "疫情查询:当前确诊   更新于：" + res["country"]["time"].slice(5),
+    body: getR(arrres).replace(/ $/, "")
+  });
+});
+}
+
+
+function getArrFromObj(obj) {
+  const rtn = [];
+  const iter = obj => {
+    rtn.push({
+      地区: obj.childStatistic,
+      治愈: obj.totalCured,
+      死亡: obj.totalDeath,
+      确诊: obj.totalConfirmed
+    });
+    const matchprov = Object.keys(obj).filter(i => i.match(/^provinceArray/));
+    if (matchprov.length) {
+      obj[matchprov[0]].forEach(iter);
+    }
+    const matchcity = Object.keys(obj).filter(i => i.match(/^cityArray/));
+    if (matchcity.length) {
+      obj[matchcity[0]].forEach(iter);
+    }
+  };
+  iter(obj);
+  return rtn;
+}
+function getR(arrres) {
+  for (var i = 0; i < area.length; i++) {
+    //console.log("area:"+area[i]);
+    for (var j = 0; j < arrres.length; j++) {
+      //console.log(arrres[j]["地区"])
+      if (arrres[j]["地区"] == area[i]) {
+        let nowConfirmed =
+          Number(arrres[j]["确诊"]) -
+          Number(arrres[j]["治愈"]) -
+          Number(arrres[j]["死亡"]);
+        ala = ala + area[i] + ":" + nowConfirmed + "  ";
+        //console.log(ala);
+        break;
+      }else if(j == arrres.length -1){
+        ala = ala + area[i] + ":无数据 ";
+        //console.log(area[i]+"查无数据")
+      }
     }
   }
-});
-function ToDBC(txtstring) {
-    var tmp = "";
-    for (var i = 0; i < txtstring.length; i++) {
-        if (txtstring.charCodeAt(i) == 32) {
-            tmp = tmp + String.fromCharCode(12288);
-        }
-        else if (txtstring.charCodeAt(i) < 127) {
-            tmp = tmp + String.fromCharCode(txtstring.charCodeAt(i) + 65248);
-        }
-    }
-    return tmp;
+  return ala;
 }
-function update_icon(status){
-  if(status== "true"){
-    return '\u2714';
-  } else if(status== "false"){
-      return '\u3030';
-    } else{
-      return '\u2716';
-     }
-}
+
+yiqing()
