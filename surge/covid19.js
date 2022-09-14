@@ -70,7 +70,7 @@ function getR(arrres) {
           break;
         } else if (j == arrres.length - 1) {
           ala = ala + area[i] + ":无数据 ";
-          console.log(area[i] + "查无数据");
+          //console.log(area[i] + "查无数据");
         }
       }
     }
