@@ -1,4 +1,4 @@
-//来源 2022/11/29 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
+# 来源 2022/11/29 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,contest.com
 DOMAIN-SUFFIX,graph.org
