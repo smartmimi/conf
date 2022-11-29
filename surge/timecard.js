@@ -86,6 +86,7 @@ function icon_now(num){
 }
 
 /**
+ * @日历算法来源 https://github.com/jjonline/calendar.js/blob/master/calendar.js
  * @1900-2100区间内的公历、农历互转
  * @charset UTF-8
  * @Author  Jea杨(JJonline@JJonline.Cn)
@@ -769,7 +770,7 @@ function title_random(num){
     6:"躺平中，等放假",
     7:"只有摸鱼才是赚老板的钱",
     8: nowlunar,
-    9:nowsolar,
+    9: nowsolar,
     10: "小乌龟慢慢爬"
   };
   return num==0?"节日快乐，万事大吉":dic[r]
