@@ -753,12 +753,12 @@ const calendar = {
     }
 };
 
-
 var lunar = calendar.solar2lunar();
+//var nowsolar = lunar.cYear + '年' +lunar.cMonth +  '月' + lunar.cDay +'日（'+lunar.astro+'）';
+var nowsolar = lunar.cMonth +  '月' + lunar.cDay +'日（'+lunar.astro+'）';
+//var nowlunar = lunar.lYear + '年' +lunar.IMonthCn+lunar.IDayCn+'，'+lunar.gzYear+'年'+lunar.gzMonth+'月'+lunar.gzDay+'日（'+lunar.Animal+'年）';
+var nowlunar = lunar.IMonthCn+lunar.IDayCn+'，'+lunar.gzYear+'年'+lunar.gzMonth+'月'+lunar.gzDay+'日（'+lunar.Animal+'年）';
 
-var nowsolar = lunar.cYear + '年' +lunar.cMonth +  '月' + lunar.cDay +'日（'+lunar.astro+'）';
-
-var nowlunar = lunar.lYear + '年' +lunar.IMonthCn+lunar.IDayCn+'，'+lunar.gzYear+'年'+lunar.gzMonth+'月'+lunar.gzDay+'日（'+lunar.Animal+'年）';
 function title_random(num){
   let r = Math.floor((Math.random()*10)+1);
   let dic = {
@@ -775,7 +775,6 @@ function title_random(num){
   };
   return num==0?"节日快乐，万事大吉":dic[r]
 }
-
 
 $done({
 title:title_random(tnumcount(Number(nowlist))),
