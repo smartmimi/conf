@@ -757,7 +757,7 @@ var lunar = calendar.solar2lunar();
 //var nowsolar = lunar.cYear + '年' +lunar.cMonth +  '月' + lunar.cDay +'日（'+lunar.astro+'）';
 var nowsolar = lunar.cMonth +  '月' + lunar.cDay +'日（'+lunar.astro+'）';
 //var nowlunar = lunar.lYear + '年' +lunar.IMonthCn+lunar.IDayCn+'，'+lunar.gzYear+'年'+lunar.gzMonth+'月'+lunar.gzDay+'日（'+lunar.Animal+'年）';
-var nowlunar = lunar.IMonthCn+lunar.IDayCn+'，'+lunar.gzYear+'年'+lunar.gzMonth+'月'+lunar.gzDay+'日（'+lunar.Animal+'年）';
+var nowlunar = lunar.IMonthCn+lunar.IDayCn+'，'+lunar.gzYear+lunar.gzMonth+lunar.gzDay+'（'+lunar.Animal+'年）';
 
 function title_random(num){
   let r = Math.floor((Math.random()*10)+1);
