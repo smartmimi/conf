@@ -90,7 +90,7 @@ DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,appboy.com
 DOMAIN-SUFFIX,appier.net
 DOMAIN-SUFFIX,appnext.com
-DOMAIN-SUFFIX,appsflyer.com
+#DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,apptentive.com
 DOMAIN-SUFFIX,atwola.com
 DOMAIN-SUFFIX,bidswitch.com
@@ -517,7 +517,7 @@ DOMAIN,track.sohu.com
 URL-REGEX,^http:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$
 
 # >> Tencent
-DOMAIN-SUFFIX,bugly.qq.com
+#DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,e.qq.com
 DOMAIN-SUFFIX,gdt.qq.com
 DOMAIN-SUFFIX,rqd.qq.com
