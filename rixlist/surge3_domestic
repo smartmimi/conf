@@ -419,5 +419,7 @@ DOMAIN-KEYWORD,weibo
 
 # >> others
 DOMAIN-SUFFIX,ztgame.com
+DOMAIN-SUFFIX,mobileztgame.com
+DOMAIN-SUFFIX,ztgame.com.cn
 
 # --- End of Mainland China Available Section ---
