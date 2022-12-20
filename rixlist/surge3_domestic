@@ -417,4 +417,7 @@ DOMAIN-SUFFIX,colorlessgreenumbralla.com
 # >> weibo
 DOMAIN-KEYWORD,weibo
 
+# >> others
+DOMAIN-SUFFIX,ztgame.com
+
 # --- End of Mainland China Available Section ---
