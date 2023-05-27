@@ -3,3 +3,4 @@ DOMAIN-SUFFIX, ai.com
 DOMAIN, cdn.auth0.com
 DOMAIN, openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,sentry.io
