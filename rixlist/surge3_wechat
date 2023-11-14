@@ -1,7 +1,6 @@
 # 复制自 https://raw.githubusercontent.com/NobyDa/Script/master/Surge/WeChat.list，本文件用于备份.
 # This ruleset includes 90% of Wechat ios network connections(South China ipv4 only). If there are any missing, please PR.
 # In addition, this ruleset is written in a special way and should not be used except for Surge.
-
 DOMAIN-KEYWORD,101.226.211.
 DOMAIN-KEYWORD,101.226.222.
 DOMAIN-KEYWORD,101.226.226.
@@ -161,7 +160,6 @@ DOMAIN-KEYWORD,203.205.232.
 DOMAIN-KEYWORD,203.205.235.
 DOMAIN-KEYWORD,203.205.253.
 DOMAIN-KEYWORD,203.205.254.
-DOMAIN-KEYWORD,203.209.245.
 DOMAIN-KEYWORD,211.95.137.
 DOMAIN-KEYWORD,211.95.138.
 DOMAIN-KEYWORD,218.68.88.
