@@ -15,7 +15,7 @@ function key(){
 
 function api() {
   $httpClient.post(
-{url:"https://relay.nekoneko.cloud/api/rules",headers: {"content-type": "application/json","token":key()}},function(error, response, data){
+{url:"https://nnr.moe/api/rules",headers: {"content-type": "application/json","token":key()}},function(error, response, data){
   let res = JSON.parse(data);
   //console.log(res["status"]);
   if (res["status"] == 1) {
