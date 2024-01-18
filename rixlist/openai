@@ -7,3 +7,8 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN, generativelanguage.googleapis.com
+DOMAIN,vnrta.turn.livekit.cloud
+DOMAIN,chatgpt.livekit.cloud
+IP-CIDR,45.0.0.0/8,no-resolve
+IP-CIDR6,2001:1800:0:0:0:0:0:0/23,no-resolve
+AND,((PROTOCOL,TCP),(DEST-PORT,7881))
