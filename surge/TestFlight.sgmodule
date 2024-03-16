@@ -4,8 +4,8 @@
 [General]
 skip-proxy = %APPEND% iosapps.itunes.apple.com
 
-[Script]
-tf下载 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js,script-update-interval=0,argument="\d+-\d+,\d+->143441-19,29"
+[Body Rewrite]
+http-request ^https?://testflight\.apple\.com/v\d/accounts/.+?/install$ (\"storefrontId\"):\".+?\" $1:"143441-19,29"
 
 [MITM]
 hostname = %APPEND% testflight.apple.com
