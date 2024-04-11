@@ -1,5 +1,9 @@
 # --- General Global Services ---
 
+# >> kaspersky
+DOMAIN-SUFFIX,kaspersky.com
+DOMAIN-KEYWORD,kaspersky
+
 # >> Google
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,admin.recaptcha.net
