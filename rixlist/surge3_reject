@@ -542,7 +542,7 @@ DOMAIN,adcdn.tencentmusic.com
 DOMAIN,adexpo.tencentmusic.com
 DOMAIN,adclick.tencentmusic.com
 DOMAIN,p.l.qq.com
-DOMAIN-SUFFIX,beacon.qq.com
+# DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,sngdia.imtmp.net
 DOMAIN-SUFFIX,wup.imtt.qq.com
 
