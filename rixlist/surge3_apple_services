@@ -1,31 +1,31 @@
 # >> Apple
 USER-AGENT,com.apple.appstored*
-DOMAIN,api-glb-sea.smoot.apple.com
-DOMAIN,appldnld.apple.com
-DOMAIN,apptrailers.itunes.apple.com
-DOMAIN,app-site-association.cdn-apple.com
-DOMAIN,aod.itunes.apple.com
-DOMAIN,audiocontentdownload.apple.com
-DOMAIN,beta.itunes.apple.com
-DOMAIN,books.itunes.apple.com
-DOMAIN,download.developer.apple.com
-DOMAIN,downloaddispatch.itunes.apple.com
-DOMAIN,embed.music.apple.com
-DOMAIN,hls.itunes.apple.com
-DOMAIN,iosapps.itunes.apple.com
-DOMAIN,itunes.apple.com
-DOMAIN,lookup-api.apple.com
-DOMAIN,mvod.itunes.apple.com
-DOMAIN,news-client.apple.com
-DOMAIN,news-edge.apple.com
-DOMAIN,osxapps.itunes.apple.com
-DOMAIN,play-edge.itunes.apple.com
-DOMAIN,oscdn.apple.com
-DOMAIN,streamingaudio.itunes.apple.com
-DOMAIN,supportdownload.apple.com
-DOMAIN,swcdn.apple.com
-DOMAIN,updates-http.cdn-apple.com
-DOMAIN,updates.cdn-apple.com
+# DOMAIN,api-glb-sea.smoot.apple.com
+# DOMAIN,appldnld.apple.com
+# DOMAIN,apptrailers.itunes.apple.com
+# DOMAIN,app-site-association.cdn-apple.com
+# DOMAIN,aod.itunes.apple.com
+# DOMAIN,audiocontentdownload.apple.com
+# DOMAIN,beta.itunes.apple.com
+# DOMAIN,books.itunes.apple.com
+# DOMAIN,download.developer.apple.com
+# DOMAIN,downloaddispatch.itunes.apple.com
+# DOMAIN,embed.music.apple.com
+# DOMAIN,hls.itunes.apple.com
+# DOMAIN,iosapps.itunes.apple.com
+# DOMAIN,itunes.apple.com
+# DOMAIN,lookup-api.apple.com
+# DOMAIN,mvod.itunes.apple.com
+# DOMAIN,news-client.apple.com
+# DOMAIN,news-edge.apple.com
+# DOMAIN,osxapps.itunes.apple.com
+# DOMAIN,play-edge.itunes.apple.com
+# DOMAIN,oscdn.apple.com
+# DOMAIN,streamingaudio.itunes.apple.com
+# DOMAIN,supportdownload.apple.com
+# DOMAIN,swcdn.apple.com
+# DOMAIN,updates-http.cdn-apple.com
+# DOMAIN,updates.cdn-apple.com
 DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple-dns.net
