@@ -775,7 +775,7 @@ USER-AGENT,AVOS*
 DOMAIN-SUFFIX,1010pic.com
 DOMAIN-SUFFIX,8le8le.com
 DOMAIN-SUFFIX,a0.app.xiaomi.com
-DOMAIN-SUFFIX,aaid.umeng.com
+# DOMAIN-SUFFIX,aaid.umeng.com
 DOMAIN-SUFFIX,ad-scope.com
 DOMAIN-SUFFIX,ad-scope.com.cn
 DOMAIN-SUFFIX,ad-sdk.huxiu.com
@@ -865,7 +865,7 @@ DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn
 DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn.dsa.dnsv1.com.cn
 DOMAIN-SUFFIX,afs.googlesyndication.com
 DOMAIN-SUFFIX,ali-ad.a.yximgs.com
-DOMAIN-SUFFIX,alog.umeng.com
+# DOMAIN-SUFFIX,alog.umeng.com
 DOMAIN-SUFFIX,amdcopen.m.taobao.com
 DOMAIN-SUFFIX,an.facebook.com
 DOMAIN-SUFFIX,analysis.yozocloud.cn
@@ -904,7 +904,7 @@ DOMAIN-SUFFIX,applog.uc.cn
 DOMAIN-SUFFIX,applog.zijieapi.com
 DOMAIN-SUFFIX,ata-sdk-uuid-report.dreport.meituan.net
 DOMAIN-SUFFIX,audid-api.taobao.com
-DOMAIN-SUFFIX,audid.umeng.com
+# DOMAIN-SUFFIX,audid.umeng.com
 DOMAIN-SUFFIX,azr.footprintdns.com
 DOMAIN-SUFFIX,b1-data.ads.heytapmobi.com
 DOMAIN-SUFFIX,bdapi-ads.realmemobile.com
@@ -925,7 +925,7 @@ DOMAIN-SUFFIX,c.kuaiduizuoye.com
 DOMAIN-SUFFIX,c.sayhi.360.cn
 DOMAIN-SUFFIX,c2.gdt.qq.com
 DOMAIN-SUFFIX,catalog.fjwhcbsh.com
-DOMAIN-SUFFIX,ccs.umeng.com
+# DOMAIN-SUFFIX,ccs.umeng.com
 DOMAIN-SUFFIX,cdn-ads.oss-cn-shanghai.aliyuncs.com
 DOMAIN-SUFFIX,cdn.ad.xiaomi.com
 DOMAIN-SUFFIX,cdn.ynuf.aliapp.org
@@ -963,8 +963,8 @@ DOMAIN-SUFFIX,e.ad.xiaomi.com
 DOMAIN-SUFFIX,eclick.baidu.com
 DOMAIN-SUFFIX,ef-dongfeng.tanx.com
 DOMAIN-SUFFIX,entry.baidu.com
-DOMAIN-SUFFIX,errlog.umeng.com
-DOMAIN-SUFFIX,errnewlog.umeng.com
+# DOMAIN-SUFFIX,errlog.umeng.com
+# DOMAIN-SUFFIX,errnewlog.umeng.com
 DOMAIN-SUFFIX,event.tradplusad.com
 DOMAIN-SUFFIX,events-drcn.op.dbankcloud.cn
 DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
@@ -1240,10 +1240,10 @@ DOMAIN-SUFFIX,udc.yahoo.com
 DOMAIN-SUFFIX,udcm.yahoo.com
 DOMAIN-SUFFIX,ulog-sdk.gifshow.com
 DOMAIN-SUFFIX,ulogjs.gifshow.com
-DOMAIN-SUFFIX,ulogs.umeng.com
-DOMAIN-SUFFIX,ulogs.umengcloud.com
-DOMAIN-SUFFIX,umengacs.m.taobao.com
-DOMAIN-SUFFIX,umengjmacs.m.taobao.com
+# DOMAIN-SUFFIX,ulogs.umeng.com
+# DOMAIN-SUFFIX,ulogs.umengcloud.com
+# DOMAIN-SUFFIX,umengacs.m.taobao.com
+# DOMAIN-SUFFIX,umengjmacs.m.taobao.com
 DOMAIN-SUFFIX,umsns.com
 DOMAIN-SUFFIX,update.avlyun.sec.miui.com
 DOMAIN-SUFFIX,update.lejiao.tv
