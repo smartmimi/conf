@@ -243,9 +243,9 @@ DOMAIN,mbdp02.bdstatic.com
 DOMAIN,acs4baichuan.m.taobao.com
 DOMAIN,adash.m.taobao.com
 DOMAIN,adash.man.aliyuncs.com
-DOMAIN,adashbc.ut.taobao.com
+# DOMAIN,adashbc.ut.taobao.com
 DOMAIN,adash-c.ut.taobao.com
-DOMAIN,adashxgc.ut.taobao.com
+# DOMAIN,adashxgc.ut.taobao.com
 DOMAIN,adashx4yt.m.taobao.com
 DOMAIN,amdc.m.taobao.com
 DOMAIN,apoll.m.taobao.com
