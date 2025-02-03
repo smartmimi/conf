@@ -164,6 +164,7 @@ DOMAIN-SUFFIX,initiummall.com,force-remote-dns
 DOMAIN-SUFFIX,issuu.com,force-remote-dns
 DOMAIN-SUFFIX,jkforum.net,force-remote-dns
 DOMAIN-SUFFIX,kakao.com,force-remote-dns
+DOMAIN-SUFFIX,linux.do,force-remote-dns
 DOMAIN-SUFFIX,live.com,force-remote-dns
 DOMAIN-SUFFIX,medium.com,force-remote-dns
 DOMAIN-SUFFIX,mega.nz,force-remote-dns
@@ -172,7 +173,7 @@ DOMAIN-SUFFIX,nyt.com,force-remote-dns
 DOMAIN-SUFFIX,nytco.com,force-remote-dns
 DOMAIN-SUFFIX,nytimes.com,force-remote-dns
 DOMAIN-SUFFIX,nytstyle.com,force-remote-dns
-DOMAIN-SUFFIX,obsidian.md
+DOMAIN-SUFFIX,obsidian.md,force-remote-dns
 DOMAIN-SUFFIX,ok.ru,force-remote-dns
 DOMAIN-SUFFIX,okex.com,force-remote-dns
 DOMAIN-SUFFIX,pinimg.com,force-remote-dns
