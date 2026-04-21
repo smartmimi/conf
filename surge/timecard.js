@@ -769,41 +769,57 @@ const calendar = {
     }
 };
 
-var lunar = calendar.solar2lunar();
-//var nowsolar = lunar.cYear + '年' +lunar.cMonth +  '月' + lunar.cDay +'日（'+lunar.astro+'）';
-var nowsolar = lunar.cMonth +  '月' + lunar.cDay +'日（'+lunar.astro+'）';
-//var nowlunar = lunar.lYear + '年' +lunar.IMonthCn+lunar.IDayCn+'，'+lunar.gzYear+'年'+lunar.gzMonth+'月'+lunar.gzDay+'日（'+lunar.Animal+'年）';
-var nowlunar = lunar.IMonthCn+lunar.IDayCn+' '+lunar.gzYear+lunar.gzMonth+lunar.gzDay+' '+lunar.Animal+'年';
+const lunar = calendar.solar2lunar();
 
-function title_random(num){
-  let r = Math.floor((Math.random()*20)+1);
-  let dic = {
-    1: "距离放假，还要摸鱼多少天？",
-    2: "坚持住，就快放假啦！",
-    3: "上班好累呀，下顿吃啥？",
-    4: "努力，我还能加班24小时！",
-    5: "今日宜：吃饭饭  忌：减肥",
-    6: "躺平中，等放假",
-    7: "只有摸鱼才是赚老板的钱",
-    8: nowlunar,
-    9: nowsolar,
-    10: "小乌龟慢慢爬",
-    11: "加油，明天会更好！",
-    12: "生活本该如此轻松",
-    13: "好累，但还能坚持一会儿",
-    14: "最近好像又胖了，唉",
-    15: "快放假啦，期待放松的时光",
-    16: "今天的目标是先活下去",
-    17: "给自己加个鸡腿！",
-    18: "只要努力工作，老板的午餐就是我的",
-    19: "今天的任务是：不干活！",
-    20: "用力生活，用力摸鱼"
-};
-  return num==0?"节日快乐，万事大吉":dic[r]
+const nowSolar = `${lunar.cMonth}月${lunar.cDay}日（${lunar.astro}）`;
+const nowLunar = `${lunar.IMonthCn}${lunar.IDayCn} ${lunar.gzYear}${lunar.gzMonth}${lunar.gzDay} ${lunar.Animal}年`;
+
+const titles = [
+  "距离放假，还要摸鱼多少天？",
+  "坚持住，就快放假啦！",
+  "上班好累呀，下顿吃啥？",
+  "努力，我还能加班24小时！",
+  "今日宜：吃饭饭  忌：减肥",
+  "躺平中，等放假",
+  "只有摸鱼才是赚老板的钱",
+  nowLunar,
+  nowSolar,
+  "小乌龟慢慢爬",
+  "加油，明天会更好！",
+  "生活本该如此轻松",
+  "好累，但还能坚持一会儿",
+  "最近好像又胖了，唉",
+  "快放假啦，期待放松的时光",
+  "今天的目标是先活下去",
+  "给自己加个鸡腿！",
+  "只要努力工作，老板的午餐就是我的",
+  "今天的任务是：不干活！",
+  "用力生活，用力摸鱼"
+];
+
+function getRandomTitle(daysLeft) {
+  return daysLeft === 0
+    ? "节日快乐，万事大吉"
+    : titles[Math.floor(Math.random() * titles.length)];
 }
 
+function getFestivalText(index, isCurrent = false) {
+  const name = tlist[index]?.[0] || "暂无";
+  const days = tnumcount(index);
+  const text = isCurrent ? today(days) : `${days}天`;
+
+  return `${name}:${text}`;
+}
+
+const currentIndex = Number(nowlist);
+const daysLeft = tnumcount(currentIndex);
+
 $done({
-title:title_random(tnumcount(Number(nowlist))),
-icon:icon_now(tnumcount(Number(nowlist))),
-content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+","+tlist[Number(nowlist) + Number(1)][0] +":"+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+":"+tnumcount(Number(nowlist) + Number(2))+"天"
-})
+  title: getRandomTitle(daysLeft),
+  icon: icon_now(daysLeft),
+  content: [
+    getFestivalText(currentIndex, true),
+    getFestivalText(currentIndex + 1),
+    getFestivalText(currentIndex + 2)
+  ].join(",")
+});
