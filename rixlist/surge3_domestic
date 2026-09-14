@@ -487,4 +487,9 @@ DOMAIN-SUFFIX,ztgame.com.cn
 DOMAIN-SUFFIX,xteko.com
 DOMAIN-SUFFIX,zjcdn.com
 
+# >> 美团检测vpn信息调用的腾讯云定位服务
+DOMAIN,icanhazip.com
+DOMAIN,ipv4.icanhazip.com
+DOMAIN,ipv6.icanhazip.com
+
 # --- End of Mainland China Available Section ---
