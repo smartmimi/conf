@@ -492,4 +492,7 @@ DOMAIN,icanhazip.com
 DOMAIN,ipv4.icanhazip.com
 DOMAIN,ipv6.icanhazip.com
 
+# >> 网上国网
+DOMAIN-SUFFIX,sgcc.com.cn
+
 # --- End of Mainland China Available Section ---
