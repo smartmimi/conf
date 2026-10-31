@@ -1,6 +1,0 @@
-#!name=sub_info_panel
-#!desc=显示机场流量。boxjs里添加https://raw.githubusercontent.com/smartmimi/conf/master/boxjs/cookie.boxjs.json，并按提示填写订阅链接等参数。
-[Panel]
-Sub_info = script-name=Sub_info,update-interval=-1
-[Script]
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/sub_info_panel.js,script-update-interval=0
