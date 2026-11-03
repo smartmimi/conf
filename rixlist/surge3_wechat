@@ -345,15 +345,7 @@ DOMAIN-SUFFIX,wx.qq.com
 DOMAIN-SUFFIX,wxs.qq.com
 
 # Device positioning
-DOMAIN-SUFFIX,analytics.map.qq.com
-DOMAIN-SUFFIX,apis.map.qq.com
-DOMAIN-SUFFIX,cc.map.qq.com
-DOMAIN-SUFFIX,indoorroad.map.qq.com
 DOMAIN-SUFFIX,lbs.gtimg.com
-DOMAIN-SUFFIX,lbs.map.qq.com
-DOMAIN-SUFFIX,nlp.map.qq.com
-DOMAIN-SUFFIX,rttgps.map.qq.com
-DOMAIN-SUFFIX,ue.indoorloc.map.qq.com
 DOMAIN-SUFFIX,up-hl.3g.qq.com
 DOMAIN-SUFFIX,yun-hl.3g.qq.com
 
