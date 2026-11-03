@@ -320,14 +320,14 @@ IP-CIDR6,240E:F7:A070:403::/60,no-resolve
 IP-CIDR6,240E:FF:9018:100::/60,no-resolve
 IP-CIDR6,240E:FF:F100::/44,no-resolve
 
-DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
-DOMAIN,btrace.qq.com
+# DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+# DOMAIN,btrace.qq.com
 DOMAIN,dldir1.qq.com
 DOMAIN,slife.xy-asia.com
 DOMAIN,soup.v.qq.com
 DOMAIN,vweixinf.tc.qq.com
 DOMAIN,weixin110.qq.com
-DOMAIN,wup.imtt.qq.com
+# DOMAIN,wup.imtt.qq.com
 DOMAIN,wx.tenpay.com
 DOMAIN,wxapp.tc.qq.com
 DOMAIN-SUFFIX,iot-tencent.com
