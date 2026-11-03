@@ -3,20 +3,16 @@
 # source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
 # 来源 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
 DOMAIN,officecdn-microsoft-com.akamaized.net
-DOMAIN-KEYWORD,officecdn
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,microsoftstore.com.cn
 DOMAIN-SUFFIX,msecnd.net
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
 DOMAIN-SUFFIX,s-microsoft.com
-DOMAIN-KEYWORD,1drv
-DOMAIN-KEYWORD,microsoft
 DOMAIN-SUFFIX,aadrm.com
 DOMAIN-SUFFIX,acompli.com
 DOMAIN-SUFFIX,acompli.net
 DOMAIN-SUFFIX,aka.ms
-DOMAIN-SUFFIX,akadns.net
 DOMAIN-SUFFIX,aspnetcdn.com
 DOMAIN-SUFFIX,assets-yammer.com
 DOMAIN-SUFFIX,azure.com
@@ -26,7 +22,6 @@ DOMAIN-SUFFIX,azurerms.com
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,cloudapp.net
 DOMAIN-SUFFIX,cloudappsecurity.com
-DOMAIN-SUFFIX,edgesuite.net
 DOMAIN-SUFFIX,gfx.ms
 DOMAIN-SUFFIX,hotmail.com
 DOMAIN-SUFFIX,live.com
@@ -35,7 +30,6 @@ DOMAIN-SUFFIX,lync.com
 DOMAIN-SUFFIX,msappproxy.net
 DOMAIN-SUFFIX,msauth.net
 DOMAIN-SUFFIX,msauthimages.net
-DOMAIN-SUFFIX,msecnd.net
 DOMAIN-SUFFIX,msedge.net
 DOMAIN-SUFFIX,msft.net
 DOMAIN-SUFFIX,msftauth.net
@@ -89,19 +83,6 @@ DOMAIN-SUFFIX,yammerusercontent.com
 PROCESS-NAME,OneDrive
 PROCESS-NAME,OneDriveUpdater
 USER-AGENT,OneDrive*
-USER-AGENT,OneDriveiOSApp*
-DOMAIN-KEYWORD,1drv
-DOMAIN-KEYWORD,onedrive
-DOMAIN-KEYWORD,skydrive
 DOMAIN-SUFFIX,livefilestore.com
-DOMAIN-SUFFIX,oneclient.sfx.ms
-DOMAIN-SUFFIX,onedrive.com
-DOMAIN-SUFFIX,onedrive.live.com
-DOMAIN-SUFFIX,photos.live.com
-DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,sharepointonline.com
-DOMAIN-SUFFIX,skydrive.wns.windows.com
 DOMAIN-SUFFIX,spoprod-a.akamaihd.net
-DOMAIN-SUFFIX,storage.live.com
-DOMAIN-SUFFIX,storage.msn.com
 #DOMAIN-SUFFIX,aria.microsoft.com
