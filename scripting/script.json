@@ -1,0 +1,42 @@
+{
+  "author" : null,
+  "version" : "2.0.0",
+  "remoteDefinitionId" : null,
+  "color" : "rgba(184, 158, 128,1)",
+  "remoteResource" : null,
+  "localizedNames" : {
+    "pt" : "",
+    "es" : "",
+    "zh" : "",
+    "ru" : "",
+    "de" : "",
+    "en" : "",
+    "ja" : "",
+    "it" : "",
+    "fr" : ""
+  },
+  "name" : "时间卡",
+  "iconImage" : null,
+  "localizedDescriptions" : {
+    "pt" : "",
+    "es" : "",
+    "zh" : "",
+    "ru" : "",
+    "de" : "",
+    "en" : "",
+    "ja" : "",
+    "it" : "",
+    "fr" : ""
+  },
+  "entry" : "index.tsx",
+  "permissions" : null,
+  "runInApp" : false,
+  "contributors" : [
+
+  ],
+  "description" : "农历与节日倒数卡片，支持小、中、大号小组件及可选节日提醒。",
+  "icon" : "calendar",
+  "intentInputTypes" : [
+
+  ]
+}
