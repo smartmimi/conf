@@ -2,18 +2,19 @@ import { VStack, HStack, ZStack, Circle, Capsule, Text, Image, Spacer, Divider, 
 import { upcoming, upcomingTerms, todayInfo, elapsedPeriods, Festival } from './model'
 
 const accent = { light: '#B85436', dark: '#FFAC8C' } as const
+const todayAccent = { light: '#C52D27', dark: '#FF8078' } as const
 const muted = { light: '#79756E', dark: '#AAA59E' } as const
 const ink = { light: '#302E2A', dark: '#F3EEE7' } as const
 const paper = { light: '#FAF7F1', dark: '#211F1D' } as const
 
 function Countdown({ item, small = false, centered = false }: { item: Festival; small?: boolean; centered?: boolean }) {
   return <VStack alignment={centered ? 'center' : 'leading'} spacing={2} frame={{ maxWidth: Infinity, alignment: centered ? 'center' : 'leading' }}>
-    <HStack spacing={5} foregroundStyle={accent}>
+    <HStack spacing={5} foregroundStyle={item.days === 0 ? todayAccent : accent}>
       <Image systemName={item.days === 0 ? 'sparkles' : 'calendar'} font={12} />
       <Text font={13} fontWeight="semibold">{item.days === 0 ? `今日${item.name}` : `距${item.name}`}</Text>
     </HStack>
     <HStack alignment="firstTextBaseline" spacing={3}>
-      <Text font={small ? 46 : centered ? 38 : 48} fontDesign="rounded" fontWeight="bold" monospacedDigit foregroundStyle={accent} widgetAccentable lineLimit={1} minScaleFactor={0.6}>{item.days === 0 ? '今天' : String(item.days)}</Text>
+      <Text font={small ? 46 : centered ? 38 : 48} fontDesign="rounded" fontWeight="bold" monospacedDigit foregroundStyle={item.days === 0 ? todayAccent : accent} widgetAccentable lineLimit={1} minScaleFactor={0.6}>{item.days === 0 ? '今天' : String(item.days)}</Text>
       {item.days > 0 ? <Text font={11} foregroundStyle={muted}>天</Text> : null}
     </HStack>
     <Text font={10} monospacedDigit foregroundStyle={muted}>{item.date.replace(/-/g, '.')}</Text>
@@ -21,11 +22,11 @@ function Countdown({ item, small = false, centered = false }: { item: Festival; 
 }
 function FestivalRow({ item, large = false }: { item: Festival; large?: boolean }) {
   return <HStack spacing={8} frame={{ maxWidth: Infinity }}>
-    <Text font={large ? 14 : 12} fontWeight="medium">{item.name}</Text>
+    <Text font={large ? 14 : 12} fontWeight={item.days === 0 ? 'bold' : 'medium'} foregroundStyle={item.days === 0 ? todayAccent : ink}>{item.name}</Text>
     <Text font={10} monospacedDigit foregroundStyle={muted}>{item.date.slice(5).replace('-', '.')}</Text>
     <Spacer minLength={0} />
     <HStack alignment="firstTextBaseline" spacing={2}>
-      <Text font={large ? 19 : 17} fontWeight="semibold" fontDesign="rounded" monospacedDigit>{item.days === 0 ? '今天' : String(item.days)}</Text>
+      <Text font={large ? 19 : 17} fontWeight={item.days === 0 ? 'bold' : 'semibold'} foregroundStyle={item.days === 0 ? todayAccent : ink} fontDesign="rounded" monospacedDigit>{item.days === 0 ? '今天' : String(item.days)}</Text>
       {item.days > 0 ? <Text font={9} foregroundStyle={muted}>天</Text> : null}
     </HStack>
   </HStack>
@@ -34,13 +35,13 @@ function FestivalTimeline({ items, solar = false }: { items: Festival[]; solar?:
   return <VStack alignment="leading" spacing={3} frame={{ maxWidth: Infinity }}>
     {items.map(item => <VStack alignment="leading" spacing={1} frame={{ maxWidth: Infinity, height: 26, alignment: 'leading' }}>
       <HStack spacing={5}>
-        <Capsule fill={solar ? { light: '#658570', dark: '#A2C5AC' } : accent} frame={{ width: 3, height: 12 }} />
-        <Text font={11} fontWeight="medium" lineLimit={1}>{item.name}</Text>
+        <Capsule fill={item.days === 0 ? todayAccent : solar ? { light: '#658570', dark: '#A2C5AC' } : accent} frame={{ width: 3, height: 12 }} />
+        <Text font={11} fontWeight={item.days === 0 ? 'bold' : 'medium'} foregroundStyle={item.days === 0 ? todayAccent : ink} lineLimit={1}>{item.name}</Text>
       </HStack>
       <HStack alignment="firstTextBaseline" spacing={3}>
-        <Text font={9} monospacedDigit foregroundStyle={muted} lineLimit={1}
+        <Text font={9} fontWeight={item.days === 0 ? 'semibold' : 'regular'} monospacedDigit foregroundStyle={item.days === 0 ? todayAccent : muted} lineLimit={1}
           frame={{ width: 28, alignment: 'leading' }}>{item.date.slice(5).replace('-', '/')}</Text>
-        <Text font={9} monospacedDigit foregroundStyle={muted} lineLimit={1} minScaleFactor={0.8}
+        <Text font={item.days === 0 ? 10 : 9} fontWeight={item.days === 0 ? 'heavy' : 'regular'} monospacedDigit foregroundStyle={item.days === 0 ? todayAccent : muted} lineLimit={1} minScaleFactor={0.8}
           frame={{ width: 27, alignment: 'trailing' }}>{item.days === 0 ? '今天' : `${item.days}天`}</Text>
       </HStack>
     </VStack>)}
