@@ -347,6 +347,97 @@ URL-REGEX,https://app.bilibili.com/x/v2/search/(defaultword|hot|recommend|resour
 URL-REGEX,https://app.bilibili.com/x/v2/rank.*rid=(168|5)
 URL-REGEX,https://api.bilibili.com/pgc/season/rank/cn
 # AND,((USER-AGENT,bili*), (NOT,((DOMAIN-SUFFIX,bilibili.com))), (NOT,((DOMAIN-SUFFIX,hdslb.com))), (NOT,((DOMAIN-SUFFIX,wo.cn))), (NOT,((DOMAIN-SUFFIX,biligame.com))),(NOT,((DOMAIN-SUFFIX,bilivideo.com))), (NOT,((DOMAIN-SUFFIX,biliapi.com))))
+# Bilibili PCDN / Maoer FM
+DOMAIN-SUFFIX,solseedr.cn
+DOMAIN-SUFFIX,solseed.cn
+# Pai Ou Cloud PCDN
+DOMAIN-SUFFIX,ppgslb.cn
+DOMAIN-SUFFIX,eeeam.com
+DOMAIN-SUFFIX,pocedsgslb.com
+DOMAIN-SUFFIX,paigod.work
+DOMAIN-SUFFIX,scwl.cn
+DOMAIN-SUFFIX,paisine.com
+DOMAIN-SUFFIX,pplabs.com
+DOMAIN-SUFFIX,ppgslb.com
+DOMAIN-SUFFIX,ppio.com
+DOMAIN-SUFFIX,ppio.cn
+DOMAIN-SUFFIX,ppos.com
+DOMAIN-SUFFIX,paicosine.com
+DOMAIN-SUFFIX,pai-net.work
+DOMAIN-SUFFIX,dddfe.com
+DOMAIN-SUFFIX,demoforge.site
+DOMAIN-SUFFIX,ppiocloud.site
+DOMAIN-SUFFIX,ppio.online
+DOMAIN-SUFFIX,ppinfra.com
+DOMAIN-SUFFIX,ppiocdn.com
+DOMAIN-SUFFIX,ppiocdn.cn
+DOMAIN-SUFFIX,nexusedgeio.com
+DOMAIN-SUFFIX,pyrcms.com
+DOMAIN-SUFFIX,pyedsgslb.com
+DOMAIN-SUFFIX,ppio.work
+DOMAIN-SUFFIX,thefirstchain.com
+DOMAIN-SUFFIX,paigpu.com
+DOMAIN-SUFFIX,gncrr.live
+DOMAIN-SUFFIX,ppio.cloud
+DOMAIN-SUFFIX,scsd.cn
+DOMAIN-SUFFIX,xyxyzz.com
+DOMAIN-SUFFIX,ppio.net.cn
+ 
+## Bilibili PCDN Blockage
+DOMAIN-SUFFIX,mcdn.bilivideo.cn
+DOMAIN-SUFFIX,mcdn.bilivideo.com
+DOMAIN-SUFFIX,ppio.bilivideo.com
+DOMAIN-SUFFIX,kodo.bilivideo.com
+ 
+DOMAIN-SUFFIX,edge.mountaintoys.cn
+DOMAIN-SUFFIX,abcdefgaijkl.com
+DOMAIN-SUFFIX,wiebaijitamo.com
+DOMAIN-SUFFIX,abcdegghijkl.com
+DOMAIN-SUFFIX,opqrsduvwxyz.com
+DOMAIN-SUFFIX,zyxwvutsrqpo.com
+DOMAIN-SUFFIX,clipspacexyy.com
+DOMAIN-SUFFIX,netvisorhub.com
+DOMAIN-SUFFIX,lmnopqrstuvw.com
+DOMAIN-SUFFIX,quantazoomz.com
+DOMAIN-SUFFIX,stormfluxixx.com
+DOMAIN-SUFFIX,datapixelzzx.com
+DOMAIN-SUFFIX,ijklmnopqrst.com
+DOMAIN-SUFFIX,flexcloudyz.com
+DOMAIN-SUFFIX,dooquuequezi.com
+DOMAIN-SUFFIX,taishoopecei.com
+DOMAIN-SUFFIX,qrstuvwxyzab.com
+DOMAIN-SUFFIX,zeicaefiegoh.com
+DOMAIN-SUFFIX,zonerushappz.com
+DOMAIN-SUFFIX,techvortexz1.com
+DOMAIN-SUFFIX,alphawebzzz.com
+DOMAIN-SUFFIX,gliderboxxyy.com
+DOMAIN-SUFFIX,ahdohpiechei.com
+DOMAIN-SUFFIX,xionguamaqui.com
+DOMAIN-SUFFIX,gaetausohyei.com
+DOMAIN-SUFFIX,roongeimahwo.com
+DOMAIN-SUFFIX,kaiwaijaicai.com
+ 
+DOMAIN-SUFFIX,ourdvsss.com
+ 
+# Bilibili Telemetry, crazy sending speed...
+DOMAIN,data.bilibili.com
+DOMAIN,dataflow.biliapi.com
+DOMAIN,cm.bilibili.com
+ 
+# Bilibili PCDN (ZhenXuanYun 臻选云（湖北）科技有限公司)
+DOMAIN-SUFFIX,zhenxyun.cn
+DOMAIN-SUFFIX,zhenxcloud.cn
+DOMAIN-SUFFIX,zhenidc.cn
+DOMAIN-SUFFIX,zxycdn.cn
+DOMAIN-SUFFIX,zhenxuanidc.cn
+DOMAIN-SUFFIX,zhenxuancdn.cn
+DOMAIN-SUFFIX,zhenxuancloud.com
+DOMAIN-SUFFIX,zhenxyun.cn
+ 
+# PCDN Blockage
+DOMAIN-KEYWORD,smogfly
+DOMAIN-KEYWORD,wuchuyun
+DOMAIN-KEYWORD,wuchucloud
 
 # >> CNTV
 DOMAIN,galaxy.bjcathay.com
