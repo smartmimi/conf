@@ -1,42 +1,46 @@
 {
-  "localizedNames" : {
-    "es" : "",
-    "it" : "",
-    "ru" : "",
-    "en" : "",
-    "de" : "",
-    "ja" : "",
-    "zh" : "",
-    "fr" : "",
-    "pt" : ""
+  "remoteResource" : {
+    "url" : "https:\/\/github.com\/smartmimi\/conf\/tree\/master\/scripting\/DY播放器",
+    "hash" : "984a6d1d9045e49516a142b705af882f",
+    "autoUpdateInterval" : 1800
   },
-  "name" : "DY播放器",
+  "permissions" : null,
   "intentInputTypes" : [
 
   ],
+  "author" : null,
+  "name" : "DY播放器",
+  "remoteDefinitionId" : null,
+  "runInApp" : true,
+  "iconImage" : null,
+  "entry" : "index.tsx",
+  "version" : "1.0.0",
+  "color" : "rgba(183, 124, 0, 1.00)",
+  "description" : "相册视频单条循环播放，上下滑动切换，支持自动和手动清理临时视频。",
   "contributors" : [
 
   ],
   "localizedDescriptions" : {
+    "pt" : "",
+    "zh" : "",
+    "de" : "",
     "es" : "",
+    "ja" : "",
+    "en" : "",
     "it" : "",
     "ru" : "",
+    "fr" : ""
+  },
+  "icon" : "music.note",
+  "localizedNames" : {
+    "zh" : "",
     "en" : "",
+    "fr" : "",
+    "it" : "",
+    "pt" : "",
     "de" : "",
     "ja" : "",
-    "zh" : "",
-    "fr" : "",
-    "pt" : ""
-  },
-  "runInApp" : true,
-  "iconImage" : null,
-  "color" : "rgba(0, 198, 165,1)",
-  "description" : "相册视频单条循环播放，上下滑动切换，支持自动和手动清理临时视频。",
-  "permissions" : null,
-  "remoteDefinitionId" : null,
-  "remoteResource" : null,
-  "author" : null,
-  "icon" : "play.rectangle.fill",
-  "version" : "1.0.0",
-  "entry" : "index.tsx"
+    "ru" : "",
+    "es" : ""
+  }
 }
