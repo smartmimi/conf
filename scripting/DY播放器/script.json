@@ -1,0 +1,42 @@
+{
+  "localizedNames" : {
+    "es" : "",
+    "it" : "",
+    "ru" : "",
+    "en" : "",
+    "de" : "",
+    "ja" : "",
+    "zh" : "",
+    "fr" : "",
+    "pt" : ""
+  },
+  "name" : "DY播放器",
+  "intentInputTypes" : [
+
+  ],
+  "contributors" : [
+
+  ],
+  "localizedDescriptions" : {
+    "es" : "",
+    "it" : "",
+    "ru" : "",
+    "en" : "",
+    "de" : "",
+    "ja" : "",
+    "zh" : "",
+    "fr" : "",
+    "pt" : ""
+  },
+  "runInApp" : true,
+  "iconImage" : null,
+  "color" : "rgba(0, 198, 165,1)",
+  "description" : "相册视频单条循环播放，上下滑动切换，支持自动和手动清理临时视频。",
+  "permissions" : null,
+  "remoteDefinitionId" : null,
+  "remoteResource" : null,
+  "author" : null,
+  "icon" : "play.rectangle.fill",
+  "version" : "1.0.0",
+  "entry" : "index.tsx"
+}
